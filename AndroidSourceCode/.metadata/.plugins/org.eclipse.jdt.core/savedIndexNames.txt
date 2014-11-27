@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+D:\CodeRed\codered\AndroidSourceCode\.metadata\.plugins\org.eclipse.jdt.core
+3979527177.index
+2326957806.index
