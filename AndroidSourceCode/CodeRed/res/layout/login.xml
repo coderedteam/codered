@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_login" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/username"
+        android:textColor="@android:color/white"
+        android:inputType="text"
+        android:paddingBottom="5dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/login_btn"
+        android:contentDescription="@string/app_name" />
+
+   <!--  <ImageView
+        android:id="@+id/cannot_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/text_1" /> -->
+
+    <ImageButton
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        android:padding="30dp"
+        android:src="@drawable/text_2"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

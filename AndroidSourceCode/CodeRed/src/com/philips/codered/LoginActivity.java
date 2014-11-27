@@ -1,10 +1,6 @@
 package com.philips.codered;
 
 import org.json.JSONException;
-import com.philips.codered.ServerRequest.OnGeneralExceptionListener;
-import com.philips.codered.ServerRequest.OnJSONExceptionListener;
-import com.philips.codered.ServerRequest.OnNetworkUnavailableListener;
-import com.philips.codered.ServerRequest.OnServerResponseListener;
 
 import android.accounts.NetworkErrorException;
 import android.app.Activity;
@@ -14,18 +10,23 @@ import android.os.Bundle;
 import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.philips.codered.ServerRequest.OnGeneralExceptionListener;
+import com.philips.codered.ServerRequest.OnJSONExceptionListener;
+import com.philips.codered.ServerRequest.OnNetworkUnavailableListener;
+import com.philips.codered.ServerRequest.OnServerResponseListener;
 
 
 public class LoginActivity extends Activity implements OnClickListener, OnServerResponseListener,
 OnJSONExceptionListener, OnGeneralExceptionListener,
 OnNetworkUnavailableListener
 {
-	Button loginButton;
+	ImageButton loginButton;
 	LoginServerRequest loginrequest;
 	
-	Button registerButton;
+	ImageButton registerButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -33,13 +34,13 @@ OnNetworkUnavailableListener
 		super.onCreate(savedInstanceState);
 
 		//Load the login screen
-		setContentView(R.layout.activity_login);
+		setContentView(R.layout.login);
 
 		//Associate the listeners
-		loginButton = (Button) findViewById(R.id.btnSignIn);
+		loginButton = (ImageButton) findViewById(R.id.loginBtn);
 		loginButton.setOnClickListener(this);
 		
-		registerButton = (Button) findViewById(R.id.btnNewAccount);
+		registerButton = (ImageButton) findViewById(R.id.create_account);
 		registerButton.setOnClickListener(this);
 	}
 
@@ -50,7 +51,7 @@ OnNetworkUnavailableListener
 		final int viewid  = view.getId();
 		switch(viewid)
 		{
-		case R.id.btnSignIn:
+		case R.id.loginBtn:
 		{
 			loginrequest = new LoginServerRequest("hello", "world", this);
 
@@ -67,7 +68,7 @@ OnNetworkUnavailableListener
 
 
 
-		case R.id.btnNewAccount:
+		case R.id.create_account:
 		{
 			//Invoke registeration activity
 			Intent intent = new Intent(this, RegisterationActivity.class);
