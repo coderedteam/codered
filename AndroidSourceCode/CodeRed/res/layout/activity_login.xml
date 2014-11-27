@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dip"
+        android:layout_marginBottom="30dip"
         android:gravity="top"
         android:orientation="vertical" >
 
@@ -47,7 +47,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/margin_small_layout"
-            android:text="@string/lblEmail" />
+            android:text="@string/lblEmail"
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/txtUsername"
@@ -63,7 +64,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dip"
-            android:text="@string/lblPswd" />
+            android:text="@string/lblPswd"
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/txtPassword"

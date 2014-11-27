@@ -93,30 +93,56 @@ public final class R {
     }
     public static final class id {
         public static final int btnNewAccount=0x7f08000b;
+        public static final int btnRegisterMe=0x7f080016;
         public static final int btnSignIn=0x7f080009;
         public static final int layoutButton=0x7f080008;
         public static final int layoutLogin=0x7f080002;
         public static final int layoutSeperator=0x7f08000a;
+        public static final int lblBloodGroup=0x7f080010;
         public static final int lblEmail=0x7f080003;
+        public static final int lblEmergencyContact=0x7f080012;
+        public static final int lblMyContact=0x7f080014;
+        public static final int lblName=0x7f08000e;
         public static final int lblPswd=0x7f080005;
+        public static final int scrollview=0x7f08000c;
+        public static final int txtBloodGroupEditBox=0x7f080011;
         public static final int txtForgotPswd=0x7f080007;
         public static final int txtMoonshot=0x7f080001;
+        public static final int txtNameEditBox=0x7f08000f;
         public static final int txtPassword=0x7f080006;
+        public static final int txtRegisteration=0x7f08000d;
         public static final int txtUsername=0x7f080004;
         public static final int txtWelcome=0x7f080000;
+        public static final int txtemergencyContactEditBox=0x7f080015;
+        public static final int txttxtemergencyContactEditBox=0x7f080013;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
+        public static final int activity_registeration=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
+        public static final int dlgMsgLoginInProgress=0x7f060009;
+        public static final int dlgMsgRegisterationInProgress=0x7f06000a;
         public static final int lblEmail=0x7f060002;
         public static final int lblPswd=0x7f060004;
         public static final int lblWelcome=0x7f060001;
+        public static final int txtBloodGroup=0x7f06000f;
         public static final int txtBtnCreateNewAccount=0x7f060007;
         public static final int txtBtnSignIn=0x7f060006;
         public static final int txtDefaultEmail=0x7f060003;
         public static final int txtDefaultPswd=0x7f060005;
+        public static final int txtInternetConnectionNotPresent=0x7f060008;
+        public static final int txtLoginSuccess=0x7f060014;
+        public static final int txtMyContactDetails=0x7f060012;
+        public static final int txtMyContactDetailsLabel=0x7f060013;
+        public static final int txtName=0x7f06000e;
+        public static final int txtNetworkError=0x7f06000b;
+        public static final int txtRegisterMe=0x7f060015;
+        public static final int txtRegisteration=0x7f060011;
+        public static final int txtServerError=0x7f06000d;
+        public static final int txtUnknownError=0x7f06000c;
+        public static final int txtemergencyContact=0x7f060010;
     }
     public static final class style {
         /**  Base application theme, dependent on API level. This theme is replaced by AppBaseTheme from res/values-vXX/styles.xml on newer devices. 
