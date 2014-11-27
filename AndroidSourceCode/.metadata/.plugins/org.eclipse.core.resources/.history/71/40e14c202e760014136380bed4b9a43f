@@ -1,0 +1,187 @@
+package com.philips.codered;
+
+
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.json.JSONException;
+import org.json.JSONObject;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Message;
+
+import com.philips.codered.Constants;
+
+
+
+public class RegisterationServerRequest extends ServerRequest<String, String, Long>
+{	
+	private Context mContext;
+	private String mUserName;
+	private String mUserPassword;
+	private Long retcode = Constants.FAILURE_RESPONSECODE; // Failure code
+
+	//Denotes the progress dialog to be shown, when the server interaction is on
+	private ProgressDialog dialog;
+
+
+	//ctor
+	public RegisterationServerRequest(String userName, String userPassword, Context context)
+	{
+		//Pass the context to the base class
+		super();
+
+		this.mContext = context;
+		this.mUserName = userName;
+		this.mUserPassword = userPassword;
+	}
+
+
+
+
+	@Override
+	protected void send() throws JSONException, Exception
+	{
+		JSONObject json = null;
+
+		//Request for login to server
+		json = getLoginResponse();
+
+		if(null != json)
+		{
+			parsereloginresponse(json);
+		}
+	}
+
+
+
+	private JSONObject getLoginResponse() throws Exception
+	{
+		InputStream stream = null;
+		String strJson = Constants.EMPTY_STRING;
+		JSONObject jObj = null;
+
+		//URL for the request
+		StringBuilder url = new StringBuilder(Constants.LOGIN_URL);
+
+
+		//Validate the input parameters before proceeding further
+		if(null != mUserName && false == mUserName.isEmpty() &&  
+				null != mUserPassword && false == mUserPassword.isEmpty())
+		{
+			HttpParams httpParams = new BasicHttpParams();
+			HttpConnectionParams.setConnectionTimeout(httpParams, Constants.SERVER_TIMEOUT);
+			DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
+
+			HttpPost request = new HttpPost(url.toString());
+			request.addHeader(Constants.HTTP_REQ_CONTENT_TYPE_KEY,
+					Constants.HTTP_REQ_CONTENT_TYPE_VALUE);
+			request.addHeader(Constants.HTTP_REQ_ACCEPT,
+					Constants.HTTP_REQ_CONTENT_TYPE_VALUE);
+
+			request.setHeader(Constants.HTTP_REQ_CACHE_CONTROL_KEY, Constants.HTTP_REQ_CACHE_CONTROL_VALUE);
+
+			JSONObject Parent = new JSONObject();
+			Parent.put(Constants.INTENT_DATA_EMAIL, mUserName);
+			Parent.put(Constants.INTENT_DATA_PASSWORD, mUserPassword);
+
+			StringEntity se = new StringEntity(Parent.toString());
+			request.setEntity(se);
+			HttpResponse httpResponse = httpClient.execute(request);
+			HttpEntity httpEntity = httpResponse.getEntity();
+			stream = httpEntity.getContent();
+			BufferedReader reader = new BufferedReader(new InputStreamReader(
+					stream, Constants.STRING_CHARENCODING_ISO88591), Constants.INTEGER_EIGHT);
+			StringBuilder sb = new StringBuilder();
+
+			String line = null;
+			while ((line = reader.readLine()) != null)
+			{
+				sb.append(line);
+				sb.append(Constants.STRING_NEWLINE);
+			}
+			stream.close();
+			strJson = sb.toString();
+
+			//Log the JSON response
+
+			jObj = new JSONObject(strJson);
+		}
+		return jObj;
+	}
+
+
+
+	private void parsereloginresponse(JSONObject result) throws JSONException
+	{
+		//just send the response code
+		retcode = Long.parseLong(result.getString(Constants.JSON_RESPONSE_CODE));
+	}
+
+
+
+	/* (non-Javadoc)
+	 * @see com.android.moonshot.request.ServerRequest#packageResponseToMessage()
+	 */
+	@Override
+	protected Message packageServerResponse()
+	{
+		//Notify the Login Activity about the result code
+		Message msg = Message.obtain();
+
+		//Send the  response code to the login activity
+		Bundle bundle = new Bundle();
+		bundle.putLong(Constants.STRING_RESPONSECODE_KEY, retcode);
+		msg.setData(bundle);
+		msg.what = Constants.LOGIN_RESP; 
+
+		return msg;
+	}
+
+
+
+	private void displayProgressDialog()
+	{
+		dialog = new ProgressDialog(mContext);
+		dialog.setMessage(mContext.getResources().getString(R.string.dlgMsgLoginSuccess));
+		dialog.show();
+	}
+
+	private void dismissProgressDialog()
+	{
+		//Dismiss the wait dialog, if its already present and being displayed
+		if(null != dialog && dialog.isShowing())
+		{
+			dialog.dismiss();
+		}
+	}
+
+
+
+	@Override
+	protected void prepareforServerRequest()
+	{
+		//Display the progress dialog
+		displayProgressDialog();		
+	}
+
+
+
+
+	@Override
+	protected void onServerResponse()
+	{
+		//Dismiss the progress dialog
+		dismissProgressDialog();
+	}
+}

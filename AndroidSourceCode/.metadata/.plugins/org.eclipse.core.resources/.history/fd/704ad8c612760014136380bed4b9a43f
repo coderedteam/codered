@@ -1,0 +1,257 @@
+package com.philips.codered;
+
+
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.json.JSONException;
+import org.json.JSONObject;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Message;
+import android.preference.PreferenceManager;
+import com.philips.codered.Constants;
+
+
+
+public class LoginServerRequest extends ServerRequest<String, String, Long>
+{	
+	private Context mContext;
+	private int iResponse_code;
+	private String mUserName;
+	private String mUserPassword;
+	private SharedPreferences settings;
+	private String strSessionId = "";
+	private Long retcode = Constants.FAILURE_RESPONSECODE; // Failure code
+	
+
+	//Used for logging
+	private final String TAG = "LoginServerRequest";
+	
+
+	//Denotes the progress dialog to be shown, when the server interaction is on
+	private ProgressDialog dialog;
+
+
+	//ctor
+	public LoginServerRequest(String userName, String userPassword, Context context)
+	{
+		//Pass the context to the base class
+		super();
+
+		this.mContext = context;
+		this.mUserName = userName;
+		this.mUserPassword = userPassword;
+
+		settings = PreferenceManager.getDefaultSharedPreferences(mContext);
+	}
+
+
+
+
+	@Override
+	protected void send() throws JSONException, Exception
+	{
+		JSONObject json = null;
+
+		//Get the unique device - id
+		String deviceID = Utility.getUniqueDeviceID(this.mContext);
+		json = getLoginResponse(mUserName, mUserPassword, deviceID);
+
+		if(null != json)
+		{
+			parsereloginresponse(json);
+		}
+	}
+
+
+
+	private JSONObject getLoginResponse(String userName,
+			String userPassword, String deviceID) throws Exception
+			{
+		InputStream stream = null;
+		String strJson = Constants.EMPTY_STRING;
+		JSONObject jObj = null;
+
+		//URL for the request
+		StringBuilder url = new StringBuilder(Constants.BASE_URL);
+		url.append(Constants.SERVER_PORT);
+		url.append(Constants.LOGIN_URL);
+		url.append(Constants.RESTAPI_VERSION);
+
+		//Validate the input parameters before proceeding further
+		if(null != userName && false == userName.isEmpty() &&  
+				null != userPassword && false == userPassword.isEmpty() && 
+				null != deviceID && false == deviceID.isEmpty()
+				)
+		{
+			HttpParams httpParams = new BasicHttpParams();
+			HttpConnectionParams.setConnectionTimeout(httpParams, Constants.SERVER_TIMEOUT);
+			DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
+
+			HttpPost request = new HttpPost(url.toString());
+			request.addHeader(Constants.HTTP_REQ_CONTENT_TYPE_KEY,
+					Constants.HTTP_REQ_CONTENT_TYPE_VALUE);
+			request.addHeader(Constants.HTTP_REQ_ACCEPT,
+					Constants.HTTP_REQ_CONTENT_TYPE_VALUE);
+			request.addHeader(Constants.HTTP_REQ_PLATFORM_KEY, Constants.HTTP_REQ_PLATFORM_VALUE);
+			request.addHeader(Constants.HTTP_REQ_UNIQUE_DEVICE_ID_KEY, deviceID);
+			request.setHeader(Constants.HTTP_REQ_CACHE_CONTROL_KEY, Constants.HTTP_REQ_CACHE_CONTROL_VALUE);
+
+			JSONObject Parent = new JSONObject();
+			Parent.put(Constants.INTENT_DATA_EMAIL, userName);
+			Parent.put(Constants.INTENT_DATA_PASSWORD, userPassword);
+			
+			//Log the JSON request
+			MoonshotLogger.d(TAG, "REQ:"+Parent.toString());
+			
+			StringEntity se = new StringEntity(Parent.toString());
+			request.setEntity(se);
+			HttpResponse httpResponse = httpClient.execute(request);
+			HttpEntity httpEntity = httpResponse.getEntity();
+			stream = httpEntity.getContent();
+			BufferedReader reader = new BufferedReader(new InputStreamReader(
+					stream, Constants.STRING_CHARENCODING_ISO88591), Constants.INTEGER_EIGHT);
+			StringBuilder sb = new StringBuilder();
+
+			String line = null;
+			while ((line = reader.readLine()) != null)
+			{
+				sb.append(line);
+				sb.append(Constants.STRING_NEWLINE);
+			}
+			stream.close();
+			strJson = sb.toString();
+			
+			//Log the JSON response
+			MoonshotLogger.d(TAG, "RES:"+strJson);
+			
+			jObj = new JSONObject(strJson);
+		}
+		return jObj;
+			}
+
+
+	
+	private void parsereloginresponse(JSONObject result) throws JSONException
+	{
+		iResponse_code = Integer.parseInt(result
+				.getString(Constants.JSON_RESPONSE_CODE));
+		if (iResponse_code >= Constants.MOONCORE_SUCCESS_RESPONSE_RANGE_START
+				&& iResponse_code < Constants.MOONCORE_SUCCESS_RESPONSE_RANGE_END)
+		{
+
+			JSONObject jsonResultObj = result
+					.getJSONObject(Constants.JSON_RESPONSE_RESULT);
+			JSONObject jsonAuthInfo = result
+					.getJSONObject(Constants.JSON_RESPONSE_AUTHINFO);
+			strSessionId = jsonAuthInfo
+					.getString(Constants.JSON_RESPONSE_TOKEN);
+			SharedPreferences.Editor editor = settings.edit();
+			editor.putString(Constants.JSON_RESPONSE_TOKEN,
+					strSessionId);
+			editor.commit();
+
+			JSONObject jsonUserObj = jsonResultObj
+					.getJSONObject(Constants.JSON_RESPONSE_USER);
+			if (jsonUserObj != null)
+			{
+				editor.putString(
+						Constants.JSON_RESPONSE_USER_FIRSTNAME,
+						jsonUserObj
+						.getString(Constants.JSON_RESPONSE_USER_FIRSTNAME));
+				editor.putString(
+						Constants.INTENT_DATA_EMAIL_ID,
+						jsonUserObj
+						.getString(Constants.INTENT_DATA_EMAIL));
+				editor.putString(
+						Constants.INTENT_USER_ID,
+						jsonUserObj
+						.getString(Constants.INTENT_USER_ID));
+				editor.putString(
+						Constants.INTENT_DATA_USER_ID,
+						jsonUserObj
+						.getString(Constants.INTENT_DATA_USER_ID));
+			}
+
+			editor.putBoolean(Constants.JSON_RESPONSE_USERFEEDS,
+					false);
+			editor.commit();
+
+			//Update the return value
+			retcode  = Constants.JSONSUCCESS_RESPONSECODE;
+
+		} else if (iResponse_code == Constants.MOONCORE_EMAIL_NOT_VERIFIED_RESPONSE)
+		{
+			retcode  = Constants.LAUNCHVERIFICATIONACTIVITY_RESPONSECODE;
+		} 
+	}
+
+
+
+	/* (non-Javadoc)
+	 * @see com.android.moonshot.request.ServerRequest#packageResponseToMessage()
+	 */
+	@Override
+	protected Message packageServerResponse()
+	{
+		//Notify the Login Activity about the result code
+		Message msg = Message.obtain();
+
+		//Send the  response code to the login activity
+		Bundle bundle = new Bundle();
+		bundle.putLong(Constants.STRING_RESPONSECODE_KEY, retcode);
+		msg.setData(bundle);
+		msg.what = Constants.LOGIN_RESP; 
+
+		return msg;
+	}
+
+
+	
+	private void displayProgressDialog()
+	{
+		dialog = new ProgressDialog(mContext);
+		dialog.setMessage(mContext.getResources().getString(R.string.dlgMsgLoginSuccess));
+		dialog.show();
+	}
+
+	private void dismissProgressDialog()
+	{
+		//Dismiss the wait dialog, if its already present and being displayed
+		if(null != dialog && dialog.isShowing())
+		{
+			dialog.dismiss();
+		}
+	}
+
+
+	
+	@Override
+	protected void prepareforServerRequest()
+	{
+		//Display the progress dialog
+		displayProgressDialog();		
+	}
+
+
+
+
+	@Override
+	protected void onServerResponse()
+	{
+		//Dismiss the progress dialog
+		dismissProgressDialog();
+	}
+}

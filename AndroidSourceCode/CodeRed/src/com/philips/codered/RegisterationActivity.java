@@ -1,0 +1,135 @@
+package com.philips.codered;
+
+import org.json.JSONException;
+import com.philips.codered.ServerRequest.OnGeneralExceptionListener;
+import com.philips.codered.ServerRequest.OnJSONExceptionListener;
+import com.philips.codered.ServerRequest.OnNetworkUnavailableListener;
+import com.philips.codered.ServerRequest.OnServerResponseListener;
+import android.accounts.NetworkErrorException;
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Message;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+
+public class RegisterationActivity extends Activity implements OnClickListener, OnServerResponseListener,
+OnJSONExceptionListener, OnGeneralExceptionListener,
+OnNetworkUnavailableListener
+{
+	Button registerButton;
+	RegisterationServerRequest registerequest;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.activity_registeration);
+
+		//Associate the listeners
+		registerButton = (Button) findViewById(R.id.btnRegisterMe);
+		registerButton.setOnClickListener(this);
+	}
+
+	@Override
+	public void onClick(View view) 
+	{
+		//Get the view id
+		final int viewid  = view.getId();
+		switch(viewid)
+		{
+		case R.id.btnRegisterMe:
+		{
+			registerequest = new RegisterationServerRequest("hello", "world", this);
+
+			// Set the appropriate listeners with the server request
+			registerequest.setOnServerResponseListener(this);
+			registerequest.setOnJSONExceptionListener(this);
+			registerequest.setOnGeneralExceptionListener(this);
+			registerequest.setOnNetworkUnavailableListener(this);
+
+			//Execute the request
+			registerequest.execute();
+		}
+		break;
+
+		default:
+			break;
+		}
+
+	}
+
+	@Override
+	public void onStop()
+	{
+		// Cancel any pending logout request
+		//		if (null != loginrequest && AsyncTask.Status.FINISHED != loginrequest.getStatus())
+		//		{
+		//			loginrequest.abort();
+		//		}
+
+		// Call the super class implementation
+		super.onStop();
+	}
+
+	@Override
+	public void onNetworkException(NetworkErrorException exception) 
+	{
+		int duration = Toast.LENGTH_SHORT;
+		Toast toast = Toast.makeText(getApplicationContext(), R.string.txtNetworkError, duration);
+		toast.show();
+	}
+
+	@Override
+	public void onGeneralException(Exception exception) 
+	{
+		int duration = Toast.LENGTH_SHORT;
+		Toast toast = Toast.makeText(getApplicationContext(), R.string.txtUnknownError, duration);
+		toast.show();
+
+	}
+
+	@Override
+	public void onJSONException(JSONException exception) 
+	{
+		int duration = Toast.LENGTH_SHORT;
+		Toast toast = Toast.makeText(getApplicationContext(), R.string.txtServerError, duration);
+		toast.show();
+
+	}
+
+
+	private void respondtoregister(Message msg)
+	{
+		Bundle bundle;
+		Long result = Constants.FAILURE_RESPONSECODE;
+
+		bundle = msg.getData();
+		result = bundle.getLong(Constants.STRING_RESPONSECODE_KEY);
+
+		if (Constants.JSONSUCCESS_RESPONSECODE == result)
+		{
+			int duration = Toast.LENGTH_SHORT;
+			Toast toast = Toast.makeText(getApplicationContext(), R.string.txtLoginSuccess, duration);
+			toast.show();
+		}
+
+	}
+
+	@Override
+	public void handle(Message msg)
+	{
+		if (null != msg)
+		{
+			// If the response is the expected one then only proceed
+			if (Constants.REGISTER_RESP == msg.what)
+			{
+				respondtoregister(msg);
+			}
+
+		}
+	}
+}

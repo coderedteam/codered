@@ -1,0 +1,39 @@
+package com.philips.codered;
+
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+
+public class LoginActivity extends Activity implements OnClickListener
+{
+	Button loginButton;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+
+		//Load the login screen
+		setContentView(R.layout.activity_login);
+		
+		loginButton = findViewById(R.id.btnSignIn)
+	}
+
+	@Override
+	public void onClick(View v) 
+	{
+		//Get the view id
+		final int viewid  = v.getId();
+		switch(viewid)
+		{
+
+		default:
+			break;
+		}
+
+	}
+}

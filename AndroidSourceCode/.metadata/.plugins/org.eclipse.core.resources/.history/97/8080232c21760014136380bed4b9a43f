@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">Code Red</string>
+    <string name="lblWelcome">Welcome</string>
+    <string name="lblEmail">Email</string>
+    <string name="txtDefaultEmail">Enter Email id</string>
+    <string name="lblPswd">Password</string>
+    <string name="txtDefaultPswd">Password</string>
+    <string name="txtBtnSignIn">Sign In</string>
+    <string name="txtBtnCreateNewAccount">Create new account</string>
+    <string name="txtInternetConnectionNotPresent">Internet connection not present</string>
+    <string name="dlgMsgLoginSuccess">Login in progress</string>
+    <string name="txtNetworkError">Network error. Please check your internet connection</string>
+    <string name="txtUnknownError">Unknown error.</string>
+    <string name="txtServerError">Illegal server response.</string>
+    <string name="lblName">Enter your full name.</string>
+    
+    
+    
+
+</resources>

@@ -1,0 +1,125 @@
+package com.philips.codered;
+
+
+import java.lang.ref.WeakReference;
+
+import org.json.JSONException;
+
+import com.philips.codered.ServerRequest.OnGeneralExceptionListener;
+import com.philips.codered.ServerRequest.OnJSONExceptionListener;
+import com.philips.codered.ServerRequest.OnNetworkUnavailableListener;
+import com.philips.codered.ServerRequest.OnServerResponseListener;
+
+import android.accounts.NetworkErrorException;
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Message;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+
+public class LoginActivity extends Activity implements OnClickListener, OnServerResponseListener,
+OnJSONExceptionListener, OnGeneralExceptionListener,
+OnNetworkUnavailableListener
+{
+	Button loginButton;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+
+		//Load the login screen
+		setContentView(R.layout.activity_login);
+
+		//Associate the listeners
+		loginButton = (Button) findViewById(R.id.btnSignIn);
+		loginButton.setOnClickListener(this);
+	}
+
+	@Override
+	public void onClick(View view) 
+	{
+		//Get the view id
+		final int viewid  = view.getId();
+		switch(viewid)
+		{
+		case R.id.btnSignIn:
+		{
+			LoginServerRequest loginrequest = new LoginServerRequest("hello", "world", this);
+			loginrequest.execute();
+		}
+		break;
+
+		default:
+			break;
+		}
+
+	}
+
+	@Override
+	public void onNetworkException(NetworkErrorException exception) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onGeneralException(Exception exception) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onJSONException(JSONException exception) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void handle(Message msg)
+	{
+		if (null != msg)
+		{
+			// If the response is the expected one then only proceed
+			if (Constants.LOGIN_RESP == msg.what)
+			{
+				respondtosubscribegrpdetailsreceivedmessage(msg);
+			}
+
+		}
+
+	}
+
+
+
+	//	private static class HandleRunnable implements Runnable
+	//	{
+	//		
+	//		private final WeakReference<TextView> mNoGoalTextView;
+	//
+	//		public HandleRunnable(TextView mTextView)
+	//		{
+	//			mNoGoalTextView = new WeakReference<TextView>(mTextView);
+	//		}
+	//
+	//		/* (non-Javadoc)
+	//		 * @see java.lang.Runnable#run()
+	//		 */
+	//		@Override
+	//		public void run()
+	//		{
+	//			TextView text=mNoGoalTextView.get();
+	//			
+	//			if(text!=null)
+	//			{
+	//				text.setEnabled(true);
+	//			}
+	//			
+	//		}
+	//	}
+}

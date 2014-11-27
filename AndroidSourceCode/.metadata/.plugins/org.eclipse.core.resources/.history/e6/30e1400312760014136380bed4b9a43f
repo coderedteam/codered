@@ -1,0 +1,497 @@
+
+package com.philips.codered;
+
+import java.util.UUID;
+
+/************************************************************************************************************************************
+ * 
+ * @author appaiah.k.g@philips.com
+ * @description This File is used to contain all the constant definitions used
+ *              in the project.
+ * @version v0.1
+ * 
+ ************************************************************************************************************************************/
+public final class Constants
+{
+	private Constants()
+	{
+		// restrict instantiation
+	}
+
+	public static final int INTEGER_ZERO = 0;
+	public static final int INTEGER_ONE = 1;
+	public static final int INTEGER_TWO = 2;
+	public static final int INTEGER_EIGHT = 8;
+	public  static final int INTEGER_HEALTH_PICKER_MIN_VALUE = 1;
+	public static final int INTEGER_HEALTH_PICKER_MAX_VALUE = 100;
+	public static final int INTEGER_MINUS_ONE = -1;
+	public static final String EMPTY_STRING = "";
+	public static final String NULL_STRING = "null";
+	public static final String STRING_SPACE = " ";
+	public static final String STRING_NEWLINE = "\n";
+	public static final String STRING_MOOD_DELIMETER = "-";
+	public static final String STRING_COLON = ":";
+	public static final String STRING_CLOSING_BRACE = "}";
+	public static final String STRING_FRAGMENT = "Fragment";
+	public static final String STRING_SUBSCRIPTION_DATA = "Subscription Data";
+	public static final String STRING_SUBSCRIPTION_VALUES = ", SubscriptionValues: ";
+	public static final String STRING_INTEGER_ONE = "1";
+	public static final String STRING_COUNTRYCODE_US = "US";
+	public static final String STRING_COUNTRYCODE_BURMA= "MM";
+	public static final String STRING_COUNTRYCODE_LIBERIA = "LR";
+	public static final String STRING_CHARENCODING_UTF8 = "UTF-8";
+	public static final String STRING_CHARENCODING_ISO88591 = "iso-8859-1";
+
+	public static final float ARC_START_ANGLE = 90.0F;
+	public static final float ARC_DEFAULT_END_ANGLE = 0.0F;
+	public static final float ARC_FULL_ANGLE = 360.0F;
+
+	public static final boolean DEVELOPER_MODE = true;
+
+	public static final String TAG_LOGIN = "LOGIN";
+	public static final String JSON_RESPONSE_ERROR = "error";
+	public static final String JSON_RESPONSE_RESULT = "result";
+	public static final String JSON_RESPONSE_CODE = "code";
+	public static final String JSON_RESPONSE_CODE2 = "code2";
+	public static final String JSON_RESPONSE_AUTHINFO = "authInfo";
+	public static final String JSON_RESPONSE_USER = "user";
+	public static final String JSON_RESPONSE_USER_FIRSTNAME = "firstName";
+	public static final String JSON_RESPONSE_USER_PHOTOURL = "photoUrl";
+	public static final String JSON_RESPONSE_USERFEEDS = "userFeeds";
+	public static final String JSON_RESPONSE_TOKEN = "token";
+	public static final String JSON_RESPONSE_ERROR_CODE = "errorCode";
+	public static final String JSON_RESPONSE_ERROR_DES = "errorDescription";
+	public static final String JSON_RESPONSE_INCIDENT = "incidentID";
+	public static final String JSON_RESPONSE_BODY = "body";
+	public static final String JSON_RESPONSE_BEHAVIOR = "behavior";
+
+
+
+	public static final String JSON_RESPONSE_GROUPNAME = "groupName";
+	public static final String JSON_RESPONSE_GROUPID =  "groupId";
+	public static final String JSON_RESPONSE_SUBSCRIPTIONVALUES = "subscriptionValues"; 
+	public static final String JSON_RESPONSE_SUBSCRIPTIONVALUE = "subscriptionValue"; 
+	public static final String JSON_RESPONSE_ID ="id";
+	public static final String JSON_RESPONSE_NAME ="name";
+	public static final String JSON_RESPONSE_NAME2 ="name2";
+	public static final String JSON_RESPONSE_UNIT ="unit";
+	public static final String JSON_RESPONSE_UNIT2 ="unit2";
+	public static final String JSON_RESPONSE_VALUE ="value";
+	public static final String JSON_RESPONSE_VALUE2 ="value2";
+	public static final String JSON_RESPONSE_SOMETITLE ="someTitle";
+	public static final String JSON_RESPONSE_SOMETITLE2 ="someTitle2";
+	public static final String JSON_RESPONSE_SOMEINT ="someInt";
+	public static final String JSON_RESPONSE_SOMEINT2 ="someInt2";
+	public static final String JSON_RESPONSE_XSCALETYPE ="xscaleType";
+	public static final String JSON_RESPONSE_YSCALETYPE ="yscaleType";
+	public static final String JSON_RESPONSE_SUBSCRIPTIONGROUPS = "subscriptionGroups";
+	public static final String JSON_RESPONSE_SUBSCRIPTIONDATAVALUES = "subscriptionDataValues";
+	public static final String JSON_RESPONSE_YAXISVALUE = "yaxisValue";
+	public static final String JSON_RESPONSE_XAXISVALUE = "xaxisValue";
+
+	public static final String JSON_RESPONSE_CHARTITLE = "chartTitle";
+	public static final String JSON_RESPONSE_SESSIONID = "token"; 
+
+	public static final String IS_LOGIN = "IsLoggedIn";
+	public static final int MOONCORE_SUCCESS_RESPONSE_RANGE_START = 200;
+	public static final int MOONCORE_SUCCESS_RESPONSE_RANGE_END = 300;
+	public static final int MOONCORE_EMAIL_NOT_VERIFIED_RESPONSE = 9999;
+	public static final int MOONCORE_SERVER_ERROR = 500;
+	public static final int SERVER_TIMEOUT = 3000;
+
+	
+	//Mooncore URL Strings
+	//public static final String BASE_URL = "http://161.91.234.224";
+	public static final String BASE_URL = "http://23.101.22.122";
+
+	//public static final String SERVER_PORT = ":9090";
+	public static final String SERVER_PORT = ":1880";
+	public static final String RESTAPI_VERSION = "v=1.0";
+	public static final String REGISTER_URL = "/users?";
+	public static final String LOGIN_URL = "/users/login?";
+	public static final String LOGOUT_URL = "/users/logout?";
+	public static final String VERIFICATION_URL = "/mooncore/api/v1/users/resendVerifyEmail";
+	public static final String GETGOAL_URL = "/data/observation/getGoal?"; 
+	public static final String COMMIT_HEALTH_GOAL_URL = "/data/observation/saveGoal?";
+	public static final String SUBS_GROUP_DETAIL_URL = "/data/view/dashboard?";
+	public static final String SUBS_DATA_WEIGHT = "/data/observation/getWeight?";
+	public static final String SUBS_DATA_BLOODOXYGEN = "/data/observation/getBloodOxygen?";
+	public static final String SUBS_DATA_SKINTEMP = "/data/observation/getSkinTemperature?";
+	public static final String SUBS_DATA_GALVANICSKIN = "/data/observation/getGalvanicSkinResponse?";
+	public static final String SUBS_DATA_HEARTRATE = "/data/observation/getHeartRate?";
+	public static final String SUBS_DATA_FATPERCENTAGE = "/data/observation/getBodyFatPercentage?";
+	public static final String SUBS_DATA_CALORIEBURNT = "/data/observation/getCalorieBurnt?";
+	public static final String SUBS_DATA_CALORIEINTAKE = "/data/observation/getCalorieIntake?";
+	public static final String SUBS_DATA_BLOODPRESSURE = "/data/observation/getBloodPressure?";
+	public static final String SUBS_DATA_SLEEP = "/data/observation/getSleep?";
+	public static final String SUBS_DATA_STEPS = "/data/observation/getSteps?";
+	public static final String SUBS_DATA_MOOD = "/data/observation/getMood?";
+	public static final String SETWEIGHT_URL = "/data/view/series/weight?";
+	public static final String SETCALORIE_URL = "/data/view/series/calorie_intake?";
+	public static final String GETMOODCONFIG_URL = "/data/observation/moodConfigurationDetails?";
+	public static final String SETMOOD_URL = "/data/observation/mood?";
+	public static final String GETMOOD_URL = "/data/observation/getMood?";
+
+	public static final int ADD_FEED_BTN_ID = 9999;
+
+	public static final String TAG_REGISTER = "REGISTER";
+	public static final String TAG_LOGOUT = "LOGOUT";
+
+	public static final int RESULT_LOAD_IMAGE = 1;
+	public static final String PASSWORD_PATTERN = "^\\S*(?=\\S{8,32})(?=\\S*[a-z])(?=\\S*[A-Z])(?=\\S*[\\d])(?=\\S*[\\W])\\S*$";
+	public static final String EMAIL_PATTERN =  "\\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-z A-Z]{2,4}\\b";
+	public static final String TAG_ACCOUNTINFO_FRAGMENT = "AccountInfoFragment";
+	public static final String TAG_PERSONALINFO_FRAGMENT = "PersonalInfoFragment";
+	public static final String TAG_CONSENT_FRAGMENT = "ConsentFragment";
+	public static final String TAG_TERMS_FRAGMENT = "TermsFragment";
+	public static final int TEXT_SIZE_TAB = 10;
+	public static final String MEASUREMENT_UNIT_METRIC = "metric";
+	public static final String MEASUREMENT_UNIT_US = "us";
+	public static final String KEY_SAVE_REGISTER_HEIGHT = "register_height";
+	public static final String KEY_SAVE_REGISTER_WEIGHT = "register_weight";
+	public static final String KEY_SAVE_REGISTER_DOB = "register_dob";
+
+	public static final String SUCCESS_REDIRECT_URI = "http://161.91.234.224/#/device-add-success";
+	public static final String ERROR_REDIRECT_URI = "http://161.91.234.224/#/device-add-error";
+	public static final int HEIGHT_DEFAULT_CM = 150;
+	public static final int HEIGHT_MINIMUM_CM = 50;
+	public static final int HEIGHT_MAXIMUM_CM = 250;
+	public static final int HEIGHT_DEFAULT_FEET = 4;
+	public static final int HEIGHT_MINIMUM_FEET = 1;
+	public static final int HEIGHT_MAXIMUM_FEET = 8;
+	public static final int HEIGHT_DEFAULT_INCHES = 6;
+	public static final int HEIGHT_MINIMUM_INCHES = 0;
+	public static final int HEIGHT_MAXIMUM_INCHES = 11;
+	public static final int WEIGHT_DEFAULT_KG = 50;
+	public static final int WEIGHT_MINIMUM_KG = 1;
+	public static final int WEIGHT_MAXIMUM_KG = 400;
+	public static final int WEIGHT_DEFAULT_STONES = 8;
+	public static final int WEIGHT_MINIMUM_STONES = 0;
+	public static final int WEIGHT_MAXIMUM_STONES = 62;
+	public static final int WEIGHT_DEFAULT_POUNDS = 7;
+	public static final int WEIGHT_MINIMUM_POUNDS = 0;
+	public static final int WEIGHT_MAXIMUM_POUNDS = 13;
+
+	public static final int PASSWORD_MINIMUM_LENGTH = 8;
+	public static final int PASSWORD_MAXIMUM_LENGTH = 32;
+	public static final String PWD_PATTERN_SYM = "\\W";
+	public static final String PWD_PATTERN_NUM = "\\d";
+	public static final String PWD_PATTERN_ALP = "(?=.*[A-Z])(?=.*[a-z])";
+	public static final String TIMEZONE_GMT = "GMT";
+	public static final String INTENT_DATA_EMAIL = "email";
+	public static final String INTENT_DATA_PASSWORD = "password";
+	public static final String INTENT_DATA_EMAIL_ID = "emailId";
+	public static final String INTENT_DATA_ACCESS_TOKEN = "dhpAccessToken";
+	public static final String MIMETYPE_JPEG = "image/jpeg";
+	public static final String MIMETYPE_PNG = "image/png";
+	public static final int MOONCORE_EMAIL_PRESENT_ERROR = 500;
+	public static final String EMAIL_ALREADY_PRESENT_ERROR = "Email already registered";
+
+	public static final int FITBIT_FEED_ID = 1;
+	public static final int WITHINGS_FEED_ID = 2;
+	public static final int IHEALTH_FEED_ID = 3;
+	public static final int MOVES_FEED_ID = 4;
+
+	public static int APP_LOG_LEVEL = 6; // set log level from here
+	public static final String APPTAG = "Moon::";
+	public static final String INTENT_DATA_USER_ID = "dhpUserId";
+	public static final String INTENT_USER_ID = "userId";
+	public static final String INTENT_DATA_SUBS_ID = "subscriptionId";
+	public static final String JSON_STRING_PARAM_TO_KEY = "to";
+	public static final String JSON_STRING_PARAM_SOURCE_KEY = "source";
+	public static final String JSON_STRING_PARAM_SOURCE_VAL = "MANUAL";
+	public static final String KEY_PROFILE_URL = "profileURL";
+
+	public static final String WEIGHT_ME_EXTRAS = "weight_me_extras";
+	public static final String CALORIE_ME_EXTRAS = "calorie_me_extras";
+	//public static final String PROFILE_URL = "http://161.91.234.224/mooncore/api/v1/dashboard/getUserProfile";
+	//public static final String SUBS_GROUP_DETAIL_URL = "http://161.91.234.224:9090/data/view/dashboard?v=1.0";
+	
+//	public static final String SUBS_DATA_WEIGHT = "http://161.91.234.224:9090/data/observation/getWeight?v=1.0";
+//	public static final String SUBS_DATA_BLOODOXYGEN = "http://161.91.234.224:9090/data/observation/getBloodOxygen?v=1.0";
+//	public static final String SUBS_DATA_SKINTEMP = "http://161.91.234.224:9090/data/observation/getSkinTemperature?v=1.0";
+//	public static final String SUBS_DATA_GALVANICSKIN = "http://161.91.234.224:9090/data/observation/getGalvanicSkinResponse?v=1.0";
+//	public static final String SUBS_DATA_HEARTRATE = "http://161.91.234.224:9090/data/observation/getHeartRate?v=1.0";
+//	public static final String SUBS_DATA_FATPERCENTAGE = "http://161.91.234.224:9090/data/observation/getBodyFatPercentage?v=1.0";
+//	public static final String SUBS_DATA_CALORIEBURNT = "http://161.91.234.224:9090/data/observation/getCalorieBurnt?v=1.0";
+//	public static final String SUBS_DATA_CALORIEINTAKE = "http://161.91.234.224:9090/data/observation/getCalorieIntake?v=1.0";
+//	public static final String SUBS_DATA_BLOODPRESSURE = "http://161.91.234.224:9090/data/observation/getBloodPressure?v=1.0";
+//	public static final String SUBS_DATA_SLEEP = "http://161.91.234.224:9090/data/observation/getSleep?v=1.0";
+//	public static final String SUBS_DATA_STEPS = "http://161.91.234.224:9090/data/observation/getSteps?v=1.0";
+//	public static final String SUBS_DATA_MOOD = "http://161.91.234.224:9090/data/observation/getMood?v=1.0";
+
+	public static final String HTTP_REQ_ACCEPT = "Accept";
+	public static final String HTTP_REQ_CONTENT_TYPE_KEY = "Content-Type";
+	public static final String HTTP_REQ_CONTENT_TYPE_VALUE = "application/json";
+	public static final String HTTP_REQ_PLATFORM_KEY = "Platform";
+	public static final String HTTP_REQ_PLATFORM_VALUE = "Android";
+	public static final String HTTP_REQ_UNIQUE_DEVICE_ID_KEY = "Unique-Device-Id";
+	public static final String  HTTP_REQ_DHP_ACCESS_TOKEN_KEY = "Dhp-Access-Token";
+	public static final String HTTP_REQ_CACHE_CONTROL_KEY = "Cache-Control";
+	public static final String HTTP_REQ_CACHE_CONTROL_VALUE = "no-cache, no-store, must-revalidate";
+	public static final String HTTP_REQ_USERAGENT_KEY = "User-Agent";
+
+	public static final int TEXT_SIZE_XHDPI = 24;
+	public static final int TEXT_SIZE_HDPI = 20;
+	public static final int TEXT_SIZE_MDPI = 18;
+	public static final int TEXT_SIZE_LDPI = 13;
+
+	public static final int BITMAP_SCALE_SIZE = 200;
+	public static final String KEY_SAVE_REGISTER_PHOTO = "register_photo";
+	public static final String KEY_DATETIME = "dateTime";
+	public static final String KEY_VALUE = "value";
+	public static final String KEY_ITEMS = "items";
+	
+	public static final String KEY_SAVE_REGISTER_UNIT = "register_unit";
+	public static final String KEY_SAVE_REGISTER_HEIGHT_CM = "register_height_cm";
+	public static final String KEY_SAVE_REGISTER_HEIGHT_FEET = "register_height_feet";
+	public static final String KEY_SAVE_REGISTER_HEIGHT_INCHES = "register_height_inches";
+	public static final String KEY_SAVE_REGISTER_WEIGHT_KG = "register_weight_kg";
+	public static final String KEY_SAVE_REGISTER_WEIGHT_STONES = "register_weight_stones";
+	public static final String KEY_SAVE_REGISTER_WEIGHT_POUNDS = "register_weight_stones";
+	public static final String FILENAME = "Strings.txt"; 
+	public static final String FILEPATH_ENGLISH = "English";
+	public static final String TEXTFILE_EXTENSION = ".txt";
+	public static final String DEBUGDATA_PATH = "/AHRMDebugData";
+	public static final String STRING_META = "==== metadata:\n";
+	public static final String STRING_DATA = "==== activityData:\n";
+	public static final String STRING_DATE_FORMAT = "yy-MM-dd_hh-mm-ss";
+	public static final String STRING_ENTRIESSTART = "Entries:{groupName: ";
+	public static final String STRING_ENTRIESSUBSCRIPTION = "Entries:{subscriptionId: ";
+	public static final String STRING_ENTRIESNAME = ", name: ";
+
+	public static final String KEY_SAVE_REGISTER_FRAGMENT = "register_fragment_tag";
+
+	public static final String STRING_FWDSLASH = "/";
+	public static final String STRING_UNDERSCORE = "_";
+	public static final String STRING_DOUBLEMINUS = "--";
+
+
+	public static final int MOONCORE_USER_EXIST_ERROR = 1002;
+
+	public static final int ID_FRAGMENT_DASHBOARD = 0;
+	public static final int ID_FRAGMENT_NEWSFEED = 1;
+	public static final int ID_FRAGMENT_MYGOAL = 2;
+	public static final int ID_FRAGMENT_SETTINGS = 3;
+
+	public static final String SUB_START_DATE = "startDate";
+	public static final String SUB_START_DATE_FORMAT = "2014-10-10 00:00:00";
+	public static final String SUB_END_DATE = "endDate";
+	public static final String SUB_END_DATE_FORMAT = "2014-10-10 23:59:50";
+
+	//To be used for GetGoal
+	public static final String GOAL_START_DATE = "goalTargetStartDate";
+	//public static final String GOAL_START_DATE_FORMAT = "2014-11-12 00:00:00";
+	public static final String GOAL_END_DATE = "goalTargetEndDate"; 
+	//public static final String GOAL_END_DATE_FORMAT = "2014-11-12 23:59:50";
+	public static final String GOAL_GOALTYPEID = "goalTypeId";
+	public static final Integer GOAL_GOALTYPEID_VAL = 1;
+
+	public static final String GOALLIST_RSPSTR = "goalList";
+	public static final String GOAL_RSPSTR = "goal";
+	public static final String GOALSTARTDATE_RSPSTR = "goalStartDate";
+	public static final String GOALENDDATE_RSPSTR = "goalTargetEndDate";
+	
+	//Constants for parsing mood configurations
+	public static final String MOODCONFIG_DETAILS = "configurationDetails";
+	public static final String MOODCONFIG_MOODTYPE = "moodType";
+	public static final String MOODCONFIG_INTENSITIES = "moodIntensities";
+	public static final String MOODCONFIG_RESP_MOOD_TYPES = "moodConfigResponseMoodTypes";
+	public static final String MOODCONFIG_RESP_MOOD_INTENSITIES = "moodConfigResponseIntensities";
+	
+	//Constants for setting the mood
+	public static final String SETMOOD_REQ_ID = "id";
+	public static final String SETMOOD_REQ_CREATED_DATE = "createdDate";
+	public static final String SETMOOD_REQ_OB_VALUE = "observationValue";
+	public static final String SETMOOD_REQ_OB_TYPE = "observationType";
+	public static final String SETMOOD_REQ_INPUT_SOURCE = "inputSource";
+
+	public static final String SUB_INTERVAL_TYPE = "intervalType";
+	public static final String SUB_INTERVAL_TYPE_DAY = "day";
+	public static final String SUB_INTERVAL_TYPE_DAY_START_TIME = " 00:00:00";
+	public static final String SUB_INTERVAL_TYPE_DAY_END_TIME = " 23:59:59";
+	public static final String SUB_DATE_FORMAT = "yyyy-MM-dd";
+	
+	//Constants for getting the mood
+	public static final String GET_MOOD_INTERVAL_TYPE = "Day";
+	public static final String GET_MOOD_START_DATE = "startDate";
+	public static final String GET_MOOD_END_DATE = "endDate";
+	public static final String GET_MOOD_MOOD = "currentMood";
+	public static final String GET_MOOD_INTENSITY = "currentIntensity";
+	
+	//Constant for Goal
+	public static final String SHARED_PREFS_GOAL_VALUE = "SharedPrefsGOAL";
+	
+	public static final String JSON_RESPONSE_SUBSCRIPTION_DATA_ADDITIONAL_VALUES = "subscriptionDataAdditionalValues";
+
+	// For philips tracker sunshine
+	public static final String ADD_SUNSHINR_ERROR_PAGE_KEY = "add_sunshine_error_page_key";
+	public static final String ADD_SUNSHINR_ERROR_PAGE_TRYAGAIN = "add_sunshine_error_page_tryagain";
+	public static final String ADD_SUNSHINR_ERROR_PAGE_CONTINUE = "add_sunshine_error_page_continue";
+	public static final String SUNSHINE_DEVICE_ADDRESS = "sunshine_device_address";
+	public static final String SUNSHINE_DEVICE_TOKEN = "sunshine_device_token";
+	public static final String PREVIOUS_ACTIVITY = "previous_activity";
+	public static final String ACTIVITY_ADDSUNSHINESUCCESS = "ADDSUNSHINESUCCESS";
+	public static final String ACTIVITY_REMOVESUNSHINE = "REMOVESUNSHINE";
+
+	public static final float TRACKER_IMAGEROTATION_FROMDEGREE = 360.0f;
+	public static final float TRACKER_IMAGEROTATION_TODEGREE = 0.0f;
+	public static final float TRACKER_IMAGEROTATION_PIVOTXVALUE = 0.5f;
+	public static final float TRACKER_IMAGEROTATION_PIVOTYVALUE = 0.5f;
+
+	public static final long BT_ACTIVITY_TIMEOUT = 45000;
+	public static final int TRACKER_ANIMATION_DURATION = 1000;
+	public static final String NAME[] = {"DL8770", "DL8800"};
+
+
+	//For Commit Health Goal
+	public static final String DATE_FORMAT = "yyyy-MM-dd";
+//	public static final String DATE_TIME_TIMEZONE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSSZ";
+	public static final String DATE_TIME_TIMEZONE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+	public static final String TODAY_DATE_FORMAT = "d MMMM yy";
+	public static final String TIME_HR_FORMAT = "HH:mm";
+	public static final String SET_GOAL_START_DATE = "goalTargetStartDate";
+	public static final String START_DATE_TIME = " 00:00:00";
+	public static final String SET_GOAL_END_DATE = "goalTargetEndDate"; 
+	public static final String END_DATE_TIME = " 23:59:50";
+	public static final String SET_GOAL_GOALTYPEID = "goalTypeId";
+	public static final int SET_GOAL_GOALTYPEID_VAL = 1;
+	public static final String SET_GOAL = "goal";
+	
+	public static final String DATE_TIME_FORMAT = "yyyy-MM-dd hh:mm:ss";
+
+	// Device Information (published)
+	public static final UUID TX_POWER_LEVEL_UUID = UUID
+			.fromString("00002a07-0000-1000-8000-00805f9b34fb");
+	public static final UUID CUD = UUID
+			.fromString("00002901-0000-1000-8000-00805f9b34fb"); // Client User
+	// Description
+	public static final UUID FIRMWARE_REVISION_UUID = UUID
+			.fromString("00002a26-0000-1000-8000-00805f9b34fb"); // Firmware
+	// version
+	public static final UUID MANUFACTURER_NAME_UUID = UUID
+			.fromString("00002a29-0000-1000-8000-00805f9b34fb"); // Manufacturer
+	// name
+	public static final UUID DEVICE_INFORMATION_SERVICE_UUID = UUID
+			.fromString("0000180a-0000-1000-8000-00805f9b34fb"); // Device
+	// Information
+	// Service
+	public static final UUID CLIENT_CHARACTERISTIC_CONFIG = UUID
+			.fromString("00002902-0000-1000-8000-00805f9b34fb"); // Client
+	// Characteristic
+	// Configuration
+
+	// Direct Life
+	public static final UUID DLSP_SERVICE_UUID = UUID
+			.fromString("a59bfff0-6343-4053-A67c-357cc7f8f1a9");
+	public static final UUID DLSP_RX = UUID
+			.fromString("a59bfff1-6343-4053-A67c-357cc7f8f1a9");
+	public static final UUID DLSP_RX_AVAILABLE = UUID
+			.fromString("a59bfff2-6343-4053-A67c-357cc7f8f1a9");
+
+	public static final UUID DLSP_TX = UUID
+			.fromString("a59bfff4-6343-4053-A67c-357cc7f8f1a9");
+
+	// OAD
+	public static final UUID OAD_SERVICE_UUID = UUID
+			.fromString("f000ffc0-0451-4000-b000-000000000000");
+	public static final UUID OAD_CHAR_UUID = UUID
+			.fromString("f000ffc1-0451-4000-b000-000000000000");
+	public static final UUID OAD_BLOCK_UUID = UUID
+			.fromString("f000ffc2-0451-4000-b000-000000000000");
+
+	public static final UUID CC_SERVICE_UUID = UUID
+			.fromString("f000ccc0-0451-4000-b000-000000000000");
+
+	public static final String UNIQUE_DEVICE_ID = "unique_device_id";
+	public static final int SUNSHINE_ID = 9999;
+
+	public static final String FONT_CENTRALESANSCND_LIGHT = "fonts/CentraleSans-Light.otf";
+	public static final String FONT_CENTRALESANSCND_BOLD = "fonts/CentraleSans-XBold.otf";
+	public static final String FONT_CENTRALESANSCND_BOOK = "fonts/CentraleSans-Book.otf";
+
+	public static final String FONT_RES_FOLDER = "fonts/";
+
+
+	//Used for message passing in Activity and AsyncTask
+	public static final String STRING_LOGIN_ERRORTITLE_KEY = "errortitle";
+	public static final String STRING_LOGIN_ERRORMESSAGE_KEY = "errormessage";
+	public static final String STRING_RESPONSECODE_KEY = "responsecode";
+	public static final String STRING_HEALTHSCORE_KEY = "healthScore";
+	public static final String STRING_SUBSGRPDETAIL_KEY = "subscriptiondetails";
+	public static final String STRING_VERIFYRSP_KEY = "verifyrespkey";
+	public static final String STRING_CHART_KEY = "chartkey";
+	public static final int LOGIN_RESP = 1;
+	public static final int VERIFY_RESP  = 2;
+	public static final int LOGOUT_RESP  = 3;
+	public static final int SUBSCRIPTIONGROUPDETAILS_RESP  = 4;
+	public static final int REGISTER_RESP = 5;
+	public static final int SUBSDATA_RESP  = 6;
+	public static final int GETGOAL_RESP  = 7;
+	public static final int SET_GOAL_RESP  = 8;
+	public static final int SET_WEIGHT_RESP = 9;
+	public static final int SET_CALORIE_RESP = 12;
+	public static final int GET_MOODS_CONFIG_RESP = 10;
+	public static final int SET_MOODS_RESP = 11;
+	public static final int GET_MOODS_RESP = 12;
+
+	public static final Long FAILURE_RESPONSECODE = 0L;
+	public static final Long JSONSUCCESS_RESPONSECODE = 1L;
+	public static final Long JSONFAILURE_RESPONSECODE = 2L;
+	public static final Long LAUNCHVERIFICATIONACTIVITY_RESPONSECODE = 2L;
+
+	public static final double WEIGHT_STONES_MULTIPLY_FACTOR = 14.0;
+	public static final double WEIGHT_METRIC_CONVERSION_FACTOR = 2.20462;	
+	public static final double HEIGHT_FEET_MULTIPLY_FACTOR = 12.0;
+	public static final double HEIGHT_METRIC_CONVERSION_FACTOR = 2.54;
+
+	public static final int IMAGE_QUALITY_FACTOR = 90;
+	public static final int BUFFEREDREADER_SIZE = 8;
+
+	public static final String STRING_REGISTER_REQUEST_FIRSTNAME = "firstName";
+	public static final String STRING_REGISTER_REQUEST_LASTNAME = "lastName";
+	public static final String STRING_REGISTER_REQUEST_COUNTRY = "country";
+	public static final String STRING_REGISTER_REQUEST_DOB = "dateOfBirth";
+	public static final String STRING_REGISTER_REQUEST_GENDER = "gender";
+	public static final String STRING_REGISTER_REQUEST_WEIGHT = "weight";
+	public static final String STRING_REGISTER_REQUEST_HEIGHT = "height";
+	public static final String STRING_REGISTER_REQUEST_UNIT = "unitOfMeasurement";
+	public static final String STRING_REGISTER_REQUEST_TIMEZONE = "timeZone";
+	public static final String STRING_REGISTER_REQUEST_PHOTO = "photo";
+	public static final String STRING_REGISTER_REQUEST_PHOTOMIME = "photoMimeType";
+	
+	//Keys for SharedPreferences
+	public static final String SHARED_PREFS_MOOD_VALUES = "moodValues";
+	public static final String SHARED_PREFS_MOOD_INTENSITIES = "moodIntensities";
+
+	public static final String STRING_PARCEL_SUBSCRIPTIONDETAILS_KEY = "subscriptiondetails";
+	
+	//Tags for fragments
+	public static final String TAG_MY_GOAL_FRAGMENT = "MYGoalFragment";
+	
+	
+	//These will be used for fetching the localized strings from strings.xml
+	public static final int ID_WEIGHT = 1;
+	public static final int ID_HEARTRATE = 4;
+	public static final int ID_BLOODOXYGEN = 5;
+	public static final int ID_BODYFATPERCENTAGE = 6;
+	public static final int ID_BLOODPRESSURE = 7;
+	public static final int ID_SLEEPDURATION = 8;
+	public static final int ID_CALORIEBURN = 9;
+	public static final int ID_CALORIEINTAKE = 10;
+	public static final int ID_STEPS = 11;
+	public static final int ID_MOOD = 12;
+	public static final int ID_FLOOR = 13;
+	public static final int ID_ELEVATION = 14;
+    
+    
+    
+    
+    
+	
+
+}
+/*******************************************************************************************************************************************
+ * ******************************************************END OF
+ * FILE************************************************************************
+ * ****************************************************************************************************************************************/

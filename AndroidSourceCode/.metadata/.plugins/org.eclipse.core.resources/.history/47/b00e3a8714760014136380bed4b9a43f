@@ -1,0 +1,39 @@
+/**
+ * \u00a9 2014 Koninklijke Philips Electronics N.V.  All rights reserved.
+ * Reproduction or transmission in whole or in part, in any form or by any means,
+ * electronic, mechanical or otherwise, is prohibited without the prior  written consent of
+ * the owner.
+ * Author:      shyam.grover@philips.com
+ * Date:        Nov 4, 2014
+ */
+package com.android.moonshot.utility;
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
+/**
+ * @author shyam.grover@philips.com
+ * @date Nov 4, 2014
+ */
+public class NetworkState
+{
+	/** Gets the n/w state from the device. Returns true is n/w is connected or is in process of connecting
+	 * @author shyam.grover@philips.com
+	 * @date Nov 4, 2014
+	 * @param context
+	 * @return
+	 */
+	public static boolean isAvailable(Context context) 
+	{
+		boolean hasInternet = false;
+		ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+		if (networkInfo != null && networkInfo.isConnectedOrConnecting()) 
+		{
+			hasInternet = true;
+		}
+		return hasInternet;
+	}
+
+}

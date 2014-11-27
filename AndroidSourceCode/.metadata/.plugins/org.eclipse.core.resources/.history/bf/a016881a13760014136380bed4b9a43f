@@ -1,0 +1,35 @@
+
+package com.philips.codered;
+
+import java.util.UUID;
+
+/************************************************************************************************************************************
+ * 
+ * @author appaiah.k.g@philips.com
+ * @description This File is used to contain all the constant definitions used
+ *              in the project.
+ * @version v0.1
+ * 
+ ************************************************************************************************************************************/
+public final class Constants
+{
+	private Constants()
+	{
+		// restrict instantiation
+	}
+
+	
+	final public static long FAILURE_RESPONSECODE = 200;
+	final public static String EMPTY_STRING = "";
+	final public static String LOGIN_URL = "http://192.168.10.96:8080/api/user/login";
+    
+    
+    
+    
+	
+
+}
+/*******************************************************************************************************************************************
+ * ******************************************************END OF
+ * FILE************************************************************************
+ * ****************************************************************************************************************************************/
