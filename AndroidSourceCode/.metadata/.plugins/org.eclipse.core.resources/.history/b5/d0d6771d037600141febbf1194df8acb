@@ -1,0 +1,176 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+    -->
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Manual Entry Theme -->
+    <style name="ManualEntryTheme" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <!-- Custom theme for title bar. -->
+    <style name="CustomTitleTheme">
+        <item name="android:background">@drawable/navigation_bar</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/darkAqua</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+
+    <!-- action bar title text -->
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+  <!--   <style name="CustomDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@android:drawable/btn_default</item>
+    </style>
+ -->
+    <!-- Style for label above edit text in login screen, create account -->
+    <style name="reusable_Label_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+    </style>
+
+    <!-- Style for separator in login screen -->
+    <style name="seprator_view_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_weight">0.4</item>
+    </style>
+
+    <!-- reusable edit text style -->
+    <style name="reusable_Edit_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">@dimen/padding_small_layout</item>
+    </style>
+
+    <!-- Style for buttons in login screens -->
+    <style name="reusable_button_login_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sign_in_btn_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:background">@color/btnBgColor</item>
+        <item name="android:padding">@dimen/padding_small_layout</item>
+    </style>
+
+    <!-- next button reusable style -->
+    <style name="reusable_button_next_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sign_in_btn_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:background">@color/rowTextColor</item>
+        <item name="android:padding">@dimen/padding_small_layout</item>
+    </style>
+
+    <!-- edit container layout in register screen -->
+    <style name="edit_container_layout_register">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginBottom">@dimen/edit_view_gap_margin</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- validity image for edit text register -->
+    <style name="register_filed_image_validity">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/padding_small_layout</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- edit container layout in register screen -->
+    <style name="register_personal_info_linear_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">@dimen/padding_small_layout</item>
+    </style>
+
+    <!-- edit text in register personal info screen -->
+    <style name="edit_text_personal_info_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- edit text in register personal info screen -->
+    <style name="text_label_personal_info_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/rowTextColor</item>
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/padding_small_layout</item>
+    </style>
+
+    <style name="manual_entry_popup_animation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+     <!-- Custom theme for header bar with no goal. -->
+    <style name="CustomThemeHeaderNoGoal">
+        <item name="android:background">@drawable/bg_sync</item>
+    </style>
+    
+    <!-- Custom theme for my goal fragment with no goal. -->
+    <style name="CustomThemeForMyGoalFragment">
+        <item name="android:background">@drawable/bg</item>
+    </style>
+
+</resources>

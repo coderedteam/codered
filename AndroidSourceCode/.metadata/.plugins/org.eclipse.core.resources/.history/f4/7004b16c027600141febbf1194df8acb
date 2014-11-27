@@ -1,0 +1,74 @@
+/**
+ * \u00a9 2014 Koninklijke Philips Electronics N.V.  All rights reserved.
+ * Reproduction or transmission in whole or in part, in any form or by any means,
+ * electronic, mechanical or otherwise, is prohibited without the prior  written consent of
+ * the owner.
+ * Author:      Jinu Thomas
+ * Date:        Oct 29, 2014
+ */
+package com.philips.codered;
+
+import android.content.Context;
+import android.graphics.Typeface;
+import android.util.AttributeSet;
+import android.widget.EditText;
+
+
+/**
+ * This class implements the custom text view to support custom font CentraleSansCnd-Book.otf
+ * @author Jinu Thomas
+ * @date Oct 27, 2014
+ */
+public class EditTextBook extends EditText
+{
+	/**
+	 * Constructor
+	 * @param context Application context
+	 */
+	public EditTextBook(Context context)
+	{
+		super(context);
+		if(!isInEditMode())
+		{
+			setFont();
+		}
+	}
+
+	/**
+	 * Constructor
+	 * @param context Application context
+	 * @param attrs Attribute set
+	 */
+	public EditTextBook(Context context, AttributeSet attrs)
+	{
+		super(context, attrs);
+		if(!isInEditMode())
+		{
+			setFont();
+		}
+	}
+
+	/**
+	 * Constructor
+	 * @param context Application context
+	 * @param attrs Attribute set
+	 * @param defStyle style defenition
+	 */
+	public EditTextBook(Context context, AttributeSet attrs, int defStyle)
+	{
+		super(context, attrs, defStyle);
+		if(!isInEditMode())
+		{
+			setFont();
+		}
+	}
+
+
+	private void setFont()
+	{
+		//Typeface font = Typeface.createFromAsset(getContext().getAssets(),
+		//		Constants.FONT_CENTRALESANSCND_BOOK);
+		//setTypeface(font, Typeface.NORMAL);
+	}
+}
+

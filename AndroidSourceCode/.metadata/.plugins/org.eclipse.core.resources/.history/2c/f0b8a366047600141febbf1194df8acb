@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <com.android.moonshot.custom.TextViewLight
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dip"
+            android:text="@string/lblWelcome"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <com.android.moonshot.custom.TextViewLight
+            android:id="@+id/txtMoonshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_container_screen_margin"
+        android:layout_marginRight="@dimen/login_container_screen_margin"
+        android:orientation="vertical" >
+
+        <com.android.moonshot.custom.TextViewBook
+            android:id="@+id/lblEmail"
+            style="@style/reusable_Label_text"
+            android:paddingBottom="@dimen/margin_small_layout"
+            android:text="@string/lblEmail" />
+
+        <com.android.moonshot.custom.EditTextBook
+            android:id="@+id/txtUsername"
+            style="@style/reusable_Edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edit_view_gap_margin"
+            android:hint="@string/txtDefaultEmail"
+            android:inputType="textEmailAddress" >
+        </com.android.moonshot.custom.EditTextBook>
+
+        <com.android.moonshot.custom.TextViewBook
+            android:id="@+id/lblPswd"
+            style="@style/reusable_Label_text"
+            android:paddingBottom="10dip"
+            android:text="@string/lblPswd" />
+
+        <com.android.moonshot.custom.EditTextBook
+            android:id="@+id/txtPassword"
+            style="@style/reusable_Edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtDefaultPswd"
+            android:inputType="textPassword" >
+        </com.android.moonshot.custom.EditTextBook>
+
+        <com.android.moonshot.custom.TextViewBook
+            android:id="@+id/txtForgotPswd"
+            style="@style/reusable_Label_text"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip" />
+
+        <LinearLayout
+            android:id="@+id/layoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.android.moonshot.custom.CustomButton
+                android:id="@+id/btnSignIn"
+                style="@style/reusable_button_login_style"
+                android:contentDescription="@string/txtBtnSignIn"
+                android:text="@string/txtBtnSignIn" />
+
+            <LinearLayout
+                android:id="@+id/layoutSeperator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal" >
+
+                <View style="@style/seprator_view_style" />
+
+                <com.android.moonshot.custom.TextViewXBold
+                    android:id="@+id/txtSeperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dip"
+                    android:text="@string/lblSeperator"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small_size" />
+
+                <View style="@style/seprator_view_style" />
+            </LinearLayout>
+
+            <com.android.moonshot.custom.CustomButton
+                android:id="@+id/btnNewAccount"
+                style="@style/reusable_button_login_style"
+                android:contentDescription="@string/txtBtnCreateNewAccount"
+                android:text="@string/txtBtnCreateNewAccount" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

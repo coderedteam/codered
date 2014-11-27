@@ -79,3 +79,1504 @@ freemarker.core.NonBooleanException: [... Exception message was already printed;
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 11:51:41.489
 !MESSAGE Failed to load properties file for project 'CodeRed'
+
+!ENTRY org.eclipse.ui 2 2 2014-11-27 12:01:08.339
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6f53f5a4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@345cbf40,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@21ebf9be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@286090c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7d50b4c4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7860a014,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@86e8469,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@748f93bb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@76b6bad3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@254449bb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@e38d655,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@31b7d869,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7325b786,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4f8d86e4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.064
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@f943847,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2b2954e1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.065
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4c376b44,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4833eff3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.065
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@47596e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1e0fdb2f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.065
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5ab29866,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6dc1dc69,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.065
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@74cad577,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7d979d34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-27 12:08:25.065
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@350ede1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3e906375,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.624
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblWelcome
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.662
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/login_container_screen_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.664
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/login_container_screen_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.665
+!MESSAGE activity_login.xml: "@dimen/login_container_screen_margin" in attribute "layout_marginLeft" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.666
+!MESSAGE activity_login.xml: "@dimen/login_container_screen_margin" in attribute "layout_marginRight" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.668
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.671
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.673
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/margin_small_layout
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.675
+!MESSAGE activity_login.xml: "@dimen/margin_small_layout" in attribute "paddingBottom" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.677
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.681
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.683
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblEmail
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.686
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.687
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/margin_small_layout
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.689
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.691
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.693
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.696
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.697
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.699
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.701
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtDefaultEmail
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.724
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.725
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.726
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/edit_view_gap_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.727
+!MESSAGE activity_login.xml: "@dimen/edit_view_gap_margin" in attribute "layout_marginBottom" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.728
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.729
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.731
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.733
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.735
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.737
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblPswd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.738
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.740
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.741
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.742
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.744
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.745
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.747
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.748
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtDefaultPswd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.755
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.756
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.757
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.773
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.776
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.778
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.781
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.782
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.783
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.784
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.786
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.789
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.790
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.791
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.793
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.794
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.798
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.799
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.801
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.803
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.804
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.807
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.808
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.809
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.813
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/text_small_size
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.814
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblSeperator
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.816
+!MESSAGE activity_login.xml: "@dimen/text_small_size" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.819
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.820
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.821
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.822
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.823
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.827
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.828
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.829
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.831
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.832
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.834
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.835
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.837
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:35.838
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.421
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblWelcome
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.432
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/login_container_screen_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.435
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/login_container_screen_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.437
+!MESSAGE activity_login.xml: "@dimen/login_container_screen_margin" in attribute "layout_marginLeft" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.440
+!MESSAGE activity_login.xml: "@dimen/login_container_screen_margin" in attribute "layout_marginRight" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.442
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.447
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.449
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/margin_small_layout
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.450
+!MESSAGE activity_login.xml: "@dimen/margin_small_layout" in attribute "paddingBottom" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.452
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.455
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.457
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblEmail
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.459
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.461
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/margin_small_layout
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.463
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.465
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.467
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.470
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.473
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.475
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.476
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtDefaultEmail
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.478
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.481
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.483
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/edit_view_gap_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.484
+!MESSAGE activity_login.xml: "@dimen/edit_view_gap_margin" in attribute "layout_marginBottom" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.486
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.487
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.491
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.493
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.496
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.497
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblPswd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.499
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.504
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.506
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.508
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.511
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.514
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.517
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.520
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtDefaultPswd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.524
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.526
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.529
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.531
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.536
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.539
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.546
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.552
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.555
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.557
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.560
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.563
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.565
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.567
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.571
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.575
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.577
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.578
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.579
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.581
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.583
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.585
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.586
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.587
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.591
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/text_small_size
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.593
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblSeperator
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.595
+!MESSAGE activity_login.xml: "@dimen/text_small_size" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.600
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.601
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.603
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.604
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.605
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.608
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.609
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.611
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.613
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.614
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.616
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.617
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.619
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:16:41.620
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.946
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblWelcome
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.954
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/login_container_screen_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.955
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/login_container_screen_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.957
+!MESSAGE activity_login.xml: "@dimen/login_container_screen_margin" in attribute "layout_marginLeft" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.958
+!MESSAGE activity_login.xml: "@dimen/login_container_screen_margin" in attribute "layout_marginRight" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.959
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.962
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.963
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/margin_small_layout
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.964
+!MESSAGE activity_login.xml: "@dimen/margin_small_layout" in attribute "paddingBottom" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.965
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.968
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.969
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblEmail
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.970
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.971
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/margin_small_layout
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.973
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.975
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.976
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.978
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.980
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.982
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.982
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtDefaultEmail
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.984
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.985
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.986
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/edit_view_gap_margin
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.987
+!MESSAGE activity_login.xml: "@dimen/edit_view_gap_margin" in attribute "layout_marginBottom" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.989
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.991
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.994
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.997
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.998
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:26.999
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblPswd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.001
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.003
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.004
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.006
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.008
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.009
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.012
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.014
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtDefaultPswd
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.016
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.018
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.019
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.021
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.023
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.024
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.027
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.028
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.029
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.031
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.033
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.036
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.037
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.038
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.041
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.042
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.043
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.044
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnSignIn
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.046
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.047
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.049
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.051
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.052
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.053
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.057
+!MESSAGE activity_login.xml: Couldn't resolve resource @dimen/text_small_size
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.058
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblSeperator
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.059
+!MESSAGE activity_login.xml: "@dimen/text_small_size" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.062
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.064
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.064
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.067
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.068
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.071
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.072
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.073
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.076
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.077
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.079
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.081
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.083
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:17:27.084
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:32:54.834
+!MESSAGE New Project Wizard failed
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:677)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	... 6 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: OK
+Contains: D:\CodeRed\codered\AndroidSourceCode\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:33:25.675
+!MESSAGE New Project Wizard failed
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:677)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	... 6 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: OK
+Contains: D:\CodeRed\codered\AndroidSourceCode\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:34:32.784
+!MESSAGE New Project Wizard failed
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:677)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	... 6 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: OK
+Contains: D:\CodeRed\codered\AndroidSourceCode\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:38:25.749
+!MESSAGE activity_login.xml: Couldn't resolve resource @drawable/bg
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:38:25.939
+!MESSAGE activity_login.xml: Failed to convert @drawable/bg into a drawable
+!STACK 0
+java.lang.NumberFormatException: Color value '@drawable/bg' must start with #
+	at com.android.layoutlib.bridge.impl.ResourceHelper.getColor(ResourceHelper.java:72)
+	at com.android.layoutlib.bridge.impl.ResourceHelper.getDrawable(ResourceHelper.java:252)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:416)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:329)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:332)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:517)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1584)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1309)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.activated(GraphicalEditorPart.java:1066)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegatePageChange(LayoutEditorDelegate.java:686)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.pageChange(CommonXmlEditor.java:360)
+	at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(MultiPageEditorPart.java:292)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3028)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1749)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:278)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.393
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.395
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.463
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.466
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.469
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.471
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.473
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.475
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.476
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.478
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.481
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.483
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.485
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.487
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.488
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.491
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.503
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.506
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.510
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.511
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.513
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Edit_text_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.514
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.514
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.516
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.518
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.519
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.520
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.521
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_Label_text
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.523
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.526
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.531
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.533
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.536
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.537
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.539
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.541
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.542
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.543
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.544
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.552
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.554
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.555
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.557
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/seprator_view_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.559
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.562
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.564
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.567
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.569
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.571
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:44:57.573
+!MESSAGE activity_login.xml: Couldn't resolve resource @style/reusable_button_login_style
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:45:05.851
+!MESSAGE Error generating final archive: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+!STACK 0
+com.android.sdklib.build.ApkCreationException: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:469)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:422)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:362)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalPackage(BuildHelper.java:391)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalDebugPackage(BuildHelper.java:359)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:632)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1143)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.checkInputFile(ApkBuilder.java:938)
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:438)
+	... 21 more
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:45:43.301
+!MESSAGE Error generating final archive: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+!STACK 0
+com.android.sdklib.build.ApkCreationException: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:469)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:422)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:362)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalPackage(BuildHelper.java:391)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalDebugPackage(BuildHelper.java:359)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:632)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1143)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.checkInputFile(ApkBuilder.java:938)
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:438)
+	... 21 more
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:45:50.032
+!MESSAGE Error generating final archive: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+!STACK 0
+com.android.sdklib.build.ApkCreationException: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:469)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:422)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:362)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalPackage(BuildHelper.java:391)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalDebugPackage(BuildHelper.java:359)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:632)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1143)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.checkInputFile(ApkBuilder.java:938)
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:438)
+	... 21 more
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:45:56.453
+!MESSAGE Error generating final archive: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+!STACK 0
+com.android.sdklib.build.ApkCreationException: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:469)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:422)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:362)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalPackage(BuildHelper.java:391)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalDebugPackage(BuildHelper.java:359)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:632)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1143)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.checkInputFile(ApkBuilder.java:938)
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:438)
+	... 21 more
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:46:03.297
+!MESSAGE Error generating final archive: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+!STACK 0
+com.android.sdklib.build.ApkCreationException: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:469)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:422)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:362)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalPackage(BuildHelper.java:391)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalDebugPackage(BuildHelper.java:359)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:632)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1143)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.checkInputFile(ApkBuilder.java:938)
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:438)
+	... 21 more
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:46:14.509
+!MESSAGE Error generating final archive: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+!STACK 0
+com.android.sdklib.build.ApkCreationException: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:469)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:422)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:362)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalPackage(BuildHelper.java:391)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalDebugPackage(BuildHelper.java:359)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:632)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1143)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.checkInputFile(ApkBuilder.java:938)
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:438)
+	... 21 more
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-27 12:52:01.379
+!MESSAGE Error generating final archive: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+!STACK 0
+com.android.sdklib.build.ApkCreationException: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:469)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:422)
+	at com.android.sdklib.build.ApkBuilder.<init>(ApkBuilder.java:362)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalPackage(BuildHelper.java:391)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.finalDebugPackage(BuildHelper.java:359)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:632)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1143)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\CodeRed\codered\AndroidSourceCode\CodeRed\bin\resources.ap_ does not exist
+	at com.android.sdklib.build.ApkBuilder.checkInputFile(ApkBuilder.java:938)
+	at com.android.sdklib.build.ApkBuilder.init(ApkBuilder.java:438)
+	... 21 more
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:58:25.172
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/lblWelcome
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:58:25.209
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:58:25.214
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-11-27 12:58:25.216
+!MESSAGE activity_login.xml: Couldn't resolve resource @string/txtBtnCreateNewAccount

@@ -1,0 +1,52 @@
+package com.philips.codered;
+
+import android.content.Context;
+import android.graphics.Typeface;
+import android.util.AttributeSet;
+import android.widget.TextView;
+
+
+
+public class TextViewBook extends TextView
+{
+	/**
+	 * Constructor
+	 * @param context Application context
+	 */
+	public TextViewBook(Context context)
+	{
+		super(context);
+		if(!isInEditMode())
+		{
+			setFont();
+		}
+	}
+
+	
+	public TextViewBook(Context context, AttributeSet attrs)
+	{
+		super(context, attrs);
+		if(!isInEditMode())
+		{
+			setFont();
+		}
+	}
+
+	
+	public TextViewBook(Context context, AttributeSet attrs, int defStyle)
+	{
+		super(context, attrs, defStyle);
+		if(!isInEditMode())
+		{
+			setFont();
+		}
+	}
+
+	
+	private void setFont()
+	{
+//		Typeface font = Typeface.createFromAsset(getContext().getAssets(),
+//				Constants.FONT_CENTRALESANSCND_BOOK);
+//		setTypeface(font, Typeface.NORMAL);
+	}
+}

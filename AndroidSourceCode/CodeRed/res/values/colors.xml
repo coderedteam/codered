@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="blue" type="color">#0b2265</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="black" type="color">#000000</item>
+    <item name="red" type="color">#FF0000</item>
+    <item name="grey" type="color">#C0C0C0</item>
+    <item name="transparent" type="color">#00000000</item>
+    <item name="rowTextColor" type="color">#003478</item>
+    <item name="btnBgColor" type="color">#b6bf00</item>
+    <item name="tabBgColor" type="color">#bcdee3</item>
+    <item name="darkAqua" type="color">#39919A</item>
+    <item name="circle_inner_color" type="color">#0066a1</item>
+    <item name="circle_outer_color" type="color">#9ACDD4</item>
+    <item name="health_score_color" type="color">#252525</item>
+    <item name="rowTextColorWithOpacity" type="color">#66003478</item>
+    <item name="whiteWithOpacity" type="color">#77FFFFFF</item>
+    <item name="whiteWithOpacity20" type="color">#33FFFFFF</item>
+    <item name="navigationDrawerFontColor" type="color">#B3C8E6</item>
+    <item name="bottom_bg_color" type="color">#53797d</item>
+    
+    <color name="manual_entry_circle_bg_blue">#0066A1</color>
+    <color name="manual_entry_circle_bg_gray_transparent">#FFFFFF</color>
+    
+</resources>
