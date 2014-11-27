@@ -38,7 +38,8 @@ public class RegisterationServerRequest extends
 	// ctor
 	public RegisterationServerRequest(String email, String userPassword,
 			Long sosNumber, String bloodGroup, Long personalNumber,
-			Context context) {
+			Context context)
+	{
 		// Pass the context to the base class
 		super();
 
@@ -95,7 +96,7 @@ public class RegisterationServerRequest extends
 
 			Parent.put(Constants.INTENT_DATA_EMAIL, memail);
 			Parent.put(Constants.INTENT_DATA_PASSWORD, muserPassword);
-			//Parent.put(Constants.INTENT_DATA_SOSNO, msosNumber);
+			Parent.put(Constants.INTENT_DATA_SOSNO, msosNumber);
 			Parent.put(Constants.INTENT_DATA_BLOODGROUP, mbloodGroup);
 			Parent.put(Constants.INTENT_DATA_PERSONALNO, mpersonalNumber);
 

@@ -11,16 +11,6 @@ public final class Constants
 	//URL lists
 	final public static String LOGIN_URL = "http://54.169.18.40:8080/api/user/login";
 	final public static String REGISTER_URL = "http://54.169.18.40:8080/api/user";
-	
-	//JSON request parameters
-	public static final String INTENT_DATA_EMAIL = "email";
-	public static final String INTENT_DATA_PASSWORD = "password";
-	public static final String INTENT_DATA_SOSNO = "sosNo";
-	public static final String INTENT_DATA_BLOODGROUP = "bloodGroup";
-	public static final String INTENT_DATA_PERSONALNO = "personalNo";
-	
-	
-	
 
 
 	public static final String JSON_RESPONSE_CODE = "code";
@@ -35,7 +25,9 @@ public final class Constants
 
 	public static final String HTTP_REQ_CACHE_CONTROL_KEY = "Cache-Control";
 	public static final String HTTP_REQ_CACHE_CONTROL_VALUE = "no-cache, no-store, must-revalidate";
-	
+
+	public static final String INTENT_DATA_EMAIL = "email";
+	public static final String INTENT_DATA_PASSWORD = "password";
 	public static final String STRING_RESPONSECODE_KEY = "responsecode";
 
 	public static final int SERVER_TIMEOUT = 3000;

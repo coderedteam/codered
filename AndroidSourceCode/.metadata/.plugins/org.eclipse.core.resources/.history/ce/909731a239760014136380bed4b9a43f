@@ -23,6 +23,5 @@
     <string name="txtMyContactDetailsLabel">My contact details</string>
     <string name="txtLoginSuccess">Login is successful.</string>
     <string name="txtRegisterMe">Tap to register.</string>
-    <string name="txtRegisterationSuccess">Registeration is successful.</string>
 
 </resources>

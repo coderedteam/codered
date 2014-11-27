@@ -1,5 +1,7 @@
 package com.philips.codered;
 
+
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -20,8 +22,10 @@ import android.os.Message;
 
 import com.philips.codered.Constants;
 
-public class RegisterationServerRequest extends
-		ServerRequest<String, String, Long> {
+
+
+public class RegisterationServerRequest extends ServerRequest<String, String, Long>
+{	
 	private Context mContext;
 	private String memail;
 	private String muserPassword;
@@ -29,21 +33,20 @@ public class RegisterationServerRequest extends
 	private String mbloodGroup;
 	private Long mpersonalNumber;
 
+
 	private Long retcode = Constants.FAILURE_RESPONSECODE; // Failure code
 
-	// Denotes the progress dialog to be shown, when the server interaction is
-	// on
+	//Denotes the progress dialog to be shown, when the server interaction is on
 	private ProgressDialog dialog;
 
-	// ctor
-	public RegisterationServerRequest(String email, String userPassword,
-			Long sosNumber, String bloodGroup, Long personalNumber,
-			Context context) {
-		// Pass the context to the base class
+
+	//ctor
+	public RegisterationServerRequest(String email, String userPassword, Long sosNumber, String bloodGroup, Long personalNumber, Context context)
+	{
+		//Pass the context to the base class
 		super();
 
-		mContext = context;
-
+		mContext  = context;
 		memail = email;
 		muserPassword = userPassword;
 		msosNumber = sosNumber;
@@ -51,35 +54,46 @@ public class RegisterationServerRequest extends
 		mpersonalNumber = personalNumber;
 	}
 
+
+
+
 	@Override
-	protected void send() throws JSONException, Exception {
+	protected void send() throws JSONException, Exception
+	{
 		JSONObject json = null;
 
-		// Request for login to server
+		//Request for login to server
 		json = getRegisterResponse();
 
-		if (null != json) {
+		if(null != json)
+		{
 			parsereregisterresponse(json);
 		}
 	}
 
-	private JSONObject getRegisterResponse() throws Exception {
+
+
+	private JSONObject getRegisterResponse() throws Exception
+	{
 		InputStream stream = null;
 		String strJson = Constants.EMPTY_STRING;
 		JSONObject jObj = null;
 
-		// URL for the request
-		StringBuilder url = new StringBuilder(Constants.REGISTER_URL);
-
-		// Validate the input parameters before proceeding further
-		if (null != memail && false == memail.isEmpty()
-				&& null != muserPassword && false == muserPassword.isEmpty()
-				&& null != mbloodGroup && false == mbloodGroup.isEmpty())
-
+		//URL for the request
+		StringBuilder url = new StringBuilder(Constants.LOGIN_URL);
+		
+		
+		//Validate the input parameters before proceeding further
+		if(null != memail && false == memail.isEmpty() &&  
+				null != muserPassword && false == muserPassword.isEmpty() &&
+				null != mbloodGroup && false == mbloodGroup.isEmpty() &&
+				
+				
+				)
+				
 		{
 			HttpParams httpParams = new BasicHttpParams();
-			HttpConnectionParams.setConnectionTimeout(httpParams,
-					Constants.SERVER_TIMEOUT);
+			HttpConnectionParams.setConnectionTimeout(httpParams, Constants.SERVER_TIMEOUT);
 			DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
 
 			HttpPost request = new HttpPost(url.toString());
@@ -88,16 +102,11 @@ public class RegisterationServerRequest extends
 			request.addHeader(Constants.HTTP_REQ_ACCEPT,
 					Constants.HTTP_REQ_CONTENT_TYPE_VALUE);
 
-			request.setHeader(Constants.HTTP_REQ_CACHE_CONTROL_KEY,
-					Constants.HTTP_REQ_CACHE_CONTROL_VALUE);
+			request.setHeader(Constants.HTTP_REQ_CACHE_CONTROL_KEY, Constants.HTTP_REQ_CACHE_CONTROL_VALUE);
 
 			JSONObject Parent = new JSONObject();
-
-			Parent.put(Constants.INTENT_DATA_EMAIL, memail);
-			Parent.put(Constants.INTENT_DATA_PASSWORD, muserPassword);
-			//Parent.put(Constants.INTENT_DATA_SOSNO, msosNumber);
-			Parent.put(Constants.INTENT_DATA_BLOODGROUP, mbloodGroup);
-			Parent.put(Constants.INTENT_DATA_PERSONALNO, mpersonalNumber);
+			Parent.put(Constants.INTENT_DATA_EMAIL, mUserName);
+			Parent.put(Constants.INTENT_DATA_PASSWORD, mUserPassword);
 
 			StringEntity se = new StringEntity(Parent.toString());
 			request.setEntity(se);
@@ -105,75 +114,87 @@ public class RegisterationServerRequest extends
 			HttpEntity httpEntity = httpResponse.getEntity();
 			stream = httpEntity.getContent();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(
-					stream, Constants.STRING_CHARENCODING_ISO88591),
-					Constants.INTEGER_EIGHT);
+					stream, Constants.STRING_CHARENCODING_ISO88591), Constants.INTEGER_EIGHT);
 			StringBuilder sb = new StringBuilder();
 
 			String line = null;
-			while ((line = reader.readLine()) != null) {
+			while ((line = reader.readLine()) != null)
+			{
 				sb.append(line);
 				sb.append(Constants.STRING_NEWLINE);
 			}
 			stream.close();
 			strJson = sb.toString();
 
-			// Log the JSON response
+			//Log the JSON response
 
 			jObj = new JSONObject(strJson);
 		}
 		return jObj;
 	}
 
-	private void parsereregisterresponse(JSONObject result)
-			throws JSONException {
-		// just send the response code
-		retcode = Long
-				.parseLong(result.getString(Constants.JSON_RESPONSE_CODE));
+
+
+	private void parsereregisterresponse(JSONObject result) throws JSONException
+	{
+		//just send the response code
+		retcode = Long.parseLong(result.getString(Constants.JSON_RESPONSE_CODE));
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.android.moonshot.request.ServerRequest#packageResponseToMessage()
+
+
+	/* (non-Javadoc)
+	 * @see com.android.moonshot.request.ServerRequest#packageResponseToMessage()
 	 */
 	@Override
-	protected Message packageServerResponse() {
-		// Notify the Login Activity about the result code
+	protected Message packageServerResponse()
+	{
+		//Notify the Login Activity about the result code
 		Message msg = Message.obtain();
 
-		// Send the response code to the login activity
+		//Send the  response code to the login activity
 		Bundle bundle = new Bundle();
 		bundle.putLong(Constants.STRING_RESPONSECODE_KEY, retcode);
 		msg.setData(bundle);
-		msg.what = Constants.REGISTER_RESP;
+		msg.what = Constants.REGISTER_RESP; 
 
 		return msg;
 	}
 
-	private void displayProgressDialog() {
+
+
+	private void displayProgressDialog()
+	{
 		dialog = new ProgressDialog(mContext);
-		dialog.setMessage(mContext.getResources().getString(
-				R.string.dlgMsgRegisterationInProgress));
+		dialog.setMessage(mContext.getResources().getString(R.string.dlgMsgRegisterationInProgress));
 		dialog.show();
 	}
 
-	private void dismissProgressDialog() {
-		// Dismiss the wait dialog, if its already present and being displayed
-		if (null != dialog && dialog.isShowing()) {
+	private void dismissProgressDialog()
+	{
+		//Dismiss the wait dialog, if its already present and being displayed
+		if(null != dialog && dialog.isShowing())
+		{
 			dialog.dismiss();
 		}
 	}
 
-	@Override
-	protected void prepareforServerRequest() {
-		// Display the progress dialog
-		displayProgressDialog();
-	}
+
 
 	@Override
-	protected void onServerResponse() {
-		// Dismiss the progress dialog
+	protected void prepareforServerRequest()
+	{
+		//Display the progress dialog
+		displayProgressDialog();		
+	}
+
+
+
+
+	@Override
+	protected void onServerResponse()
+	{
+		//Dismiss the progress dialog
 		dismissProgressDialog();
 	}
 }

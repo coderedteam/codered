@@ -16,10 +16,6 @@ public final class Constants
 	public static final String INTENT_DATA_EMAIL = "email";
 	public static final String INTENT_DATA_PASSWORD = "password";
 	public static final String INTENT_DATA_SOSNO = "sosNo";
-	public static final String INTENT_DATA_BLOODGROUP = "bloodGroup";
-	public static final String INTENT_DATA_PERSONALNO = "personalNo";
-	
-	
 	
 
 

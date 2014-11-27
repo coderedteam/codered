@@ -1,7 +1,5 @@
 package com.philips.codered;
 
-import java.util.Calendar;
-
 import org.json.JSONException;
 import com.philips.codered.ServerRequest.OnGeneralExceptionListener;
 import com.philips.codered.ServerRequest.OnJSONExceptionListener;
@@ -9,7 +7,6 @@ import com.philips.codered.ServerRequest.OnNetworkUnavailableListener;
 import com.philips.codered.ServerRequest.OnServerResponseListener;
 import android.accounts.NetworkErrorException;
 import android.app.Activity;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.View;
@@ -46,8 +43,7 @@ OnNetworkUnavailableListener
 		{
 		case R.id.btnRegisterMe:
 		{
-			//Calendar.getInstance().get(Calendar.MINUTE);
-			registerequest = new RegisterationServerRequest("hello"+Calendar.getInstance().get(Calendar.MINUTE)+Calendar.getInstance().get(Calendar.SECOND), "world", 12345l, "B+", 12345l, this);
+			registerequest = new RegisterationServerRequest("hello", "world", this);
 
 			// Set the appropriate listeners with the server request
 			registerequest.setOnServerResponseListener(this);
@@ -70,10 +66,10 @@ OnNetworkUnavailableListener
 	public void onStop()
 	{
 		// Cancel any pending logout request
-		if (null != registerequest && AsyncTask.Status.FINISHED != registerequest.getStatus())
-		{
-			registerequest.abort();
-		}
+		//		if (null != loginrequest && AsyncTask.Status.FINISHED != loginrequest.getStatus())
+		//		{
+		//			loginrequest.abort();
+		//		}
 
 		// Call the super class implementation
 		super.onStop();
@@ -117,7 +113,7 @@ OnNetworkUnavailableListener
 		if (Constants.JSONSUCCESS_RESPONSECODE == result)
 		{
 			int duration = Toast.LENGTH_SHORT;
-			Toast toast = Toast.makeText(getApplicationContext(), R.string.txtRegisterationSuccess, duration);
+			Toast toast = Toast.makeText(getApplicationContext(), R.string.txtLoginSuccess, duration);
 			toast.show();
 		}
 

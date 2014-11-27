@@ -1,7 +1,5 @@
 package com.philips.codered;
 
-import java.util.Calendar;
-
 import org.json.JSONException;
 import com.philips.codered.ServerRequest.OnGeneralExceptionListener;
 import com.philips.codered.ServerRequest.OnJSONExceptionListener;
@@ -46,8 +44,7 @@ OnNetworkUnavailableListener
 		{
 		case R.id.btnRegisterMe:
 		{
-			//Calendar.getInstance().get(Calendar.MINUTE);
-			registerequest = new RegisterationServerRequest("hello"+Calendar.getInstance().get(Calendar.MINUTE)+Calendar.getInstance().get(Calendar.SECOND), "world", 12345l, "B+", 12345l, this);
+			registerequest = new RegisterationServerRequest("hello", "world", 54321l, "B+", 12345l, this);
 
 			// Set the appropriate listeners with the server request
 			registerequest.setOnServerResponseListener(this);

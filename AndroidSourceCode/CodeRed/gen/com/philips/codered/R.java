@@ -140,6 +140,7 @@ public final class R {
         public static final int txtNetworkError=0x7f06000b;
         public static final int txtRegisterMe=0x7f060015;
         public static final int txtRegisteration=0x7f060011;
+        public static final int txtRegisterationSuccess=0x7f060016;
         public static final int txtServerError=0x7f06000d;
         public static final int txtUnknownError=0x7f06000c;
         public static final int txtemergencyContact=0x7f060010;
