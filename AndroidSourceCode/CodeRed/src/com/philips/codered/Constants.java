@@ -12,12 +12,25 @@ public final class Constants
 	final public static String LOGIN_URL = "http://54.169.18.40:8080/api/user/login";
 	final public static String REGISTER_URL = "http://54.169.18.40:8080/api/user";
 	
+	//3rd party social networking urls
+	final public static String TWITTER_URL = "http://54.169.18.40:8080/connect/twitter";
+	
+	final public static String SEND_SIGNAL_URL = "http://54.169.18.40:8080/api/accident/distress_signal";
+	
+	final public static String RESCUE_SIGNAL_URL = "http://54.169.18.40:8080/api/accident/rescued_signal";
+	
+	
+	
 	//JSON request parameters
 	public static final String INTENT_DATA_EMAIL = "email";
 	public static final String INTENT_DATA_PASSWORD = "password";
 	public static final String INTENT_DATA_SOSNO = "sosNo";
 	public static final String INTENT_DATA_BLOODGROUP = "bloodGroup";
 	public static final String INTENT_DATA_PERSONALNO = "personalNo";
+	
+	
+	//SharedPreferences
+	public static final String SHARED_ISLOGGEDIN = "loginstatus";
 	
 	
 	
@@ -38,7 +51,7 @@ public final class Constants
 	
 	public static final String STRING_RESPONSECODE_KEY = "responsecode";
 
-	public static final int SERVER_TIMEOUT = 3000;
+	public static final int SERVER_TIMEOUT = 7000;
 
 	public static final long JSONSUCCESS_RESPONSECODE = 200l;
 

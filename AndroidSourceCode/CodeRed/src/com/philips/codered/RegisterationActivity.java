@@ -9,12 +9,13 @@ import com.philips.codered.ServerRequest.OnNetworkUnavailableListener;
 import com.philips.codered.ServerRequest.OnServerResponseListener;
 import android.accounts.NetworkErrorException;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 
@@ -22,7 +23,9 @@ public class RegisterationActivity extends Activity implements OnClickListener, 
 OnJSONExceptionListener, OnGeneralExceptionListener,
 OnNetworkUnavailableListener
 {
-	Button registerButton;
+	ImageButton registerButton;
+	ImageButton loginButton;
+	
 	RegisterationServerRequest registerequest;
 
 	@Override
@@ -30,11 +33,16 @@ OnNetworkUnavailableListener
 	{
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.activity_registeration);
+		setContentView(R.layout.register);
 
 		//Associate the listeners
-		registerButton = (Button) findViewById(R.id.btnRegisterMe);
+		registerButton = (ImageButton) findViewById(R.id.btnRegisterMe);
 		registerButton.setOnClickListener(this);
+		
+		loginButton = (ImageButton) findViewById(R.id.btnlogin);
+		loginButton.setOnClickListener(this);
+		
+		
 	}
 
 	@Override
@@ -57,6 +65,14 @@ OnNetworkUnavailableListener
 
 			//Execute the request
 			registerequest.execute();
+		}
+		break;
+		
+		case R.id.btnlogin:
+		{
+			//Invoke login activity
+			Intent intent = new Intent(this, LoginActivity.class);
+			startActivity(intent);
 		}
 		break;
 

@@ -23,4 +23,6 @@
     <color name="manual_entry_circle_bg_blue">#0066A1</color>
     <color name="manual_entry_circle_bg_gray_transparent">#FFFFFF</color>
     
+    <item name="redwithOpacity" type="color">#DDFFFFFF</item>
+    
 </resources>

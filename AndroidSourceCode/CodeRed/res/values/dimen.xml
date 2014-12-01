@@ -1,60 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="padding_small_layout">10dip</dimen>
-    <dimen name="padding_medium_layout">15dip</dimen>
-    <dimen name="padding_mediumplus_layout">20dip</dimen>
-    <dimen name="textSize_layout">12sp</dimen>
-    <dimen name="padding_xsmall_layout">5dip</dimen>
-    <dimen name="padding_xxsmall_layout">4dip</dimen>
-    <dimen name="padding_xxxsmall_layout">2dip</dimen>
-    <dimen name="margin_small_layout">10dip</dimen>
-    <dimen name="margin_medium_layout">15dip</dimen>
-    <dimen name="margin_large_layout">25dip</dimen>
-    <dimen name="text_medium_size">15sp</dimen>
-    <dimen name="text_14_size">14sp</dimen>
-    <dimen name="text_small_size">12sp</dimen>
-    <dimen name="image_medium_size">38dip</dimen>
-    <dimen name="image_small_size">12dip</dimen>
-    <dimen name="title_bar_padding">8dp</dimen>
-    <dimen name="sign_in_btn_height">39dp</dimen>
     <dimen name="login_container_screen_margin">17dp</dimen>
+    <dimen name="margin_small_layout">10dip</dimen>
     <dimen name="edit_view_gap_margin">18dp</dimen>
-    <dimen name="general_health_text_size">50sp</dimen>
-    <dimen name="padding_general_health_circle">13dip</dimen>
-    <dimen name="general_health_outer_circle">150dp</dimen>
-    <dimen name="general_health_inner_circle">130dp</dimen>
-    <dimen name="general_health_border_circle">20dp</dimen>
-    <dimen name="set_health_goal_left_margin">30dp</dimen>
-    <dimen name="set_health_goal_general_font">14sp</dimen>
-    <dimen name="padding_general_health_row">18dip</dimen>
-    <dimen name="separator_height">2dip</dimen>
-    <dimen name="padding_indicator">3dip</dimen>
-    <dimen name="dashboard_row_bottom_margin">8dip</dimen>
-    <dimen name="dashboard_edit_btn_negtv_margin">24dip</dimen>
-    <dimen name="edit_btn_negative_margin">-18dip</dimen>
-    <dimen name="stroke_width">1.5dip</dimen>
-    <dimen name="dashboard_custom_circle_inner">100dp</dimen>
-    <dimen name="dashboard_custom_circle_outer">102dp</dimen>
-    <dimen name="text_dashboard_circle_inner_value">24sp</dimen>
-    <dimen name="dashboard_circle_margin">50dp</dimen>
-    <dimen name="title_bar_text">24sp</dimen>
-    <dimen name="btn_menu_width">25dp</dimen>
-    <dimen name="btn_menu_height">25dp</dimen>
-    <dimen name="nav_drawer_list_item_height">47dp</dimen>
-    <dimen name="nav_drawer_left_margin">2dp</dimen>
-    <dimen name="headerbar_height">45dp</dimen>
-    <dimen name="headerbar_height_no_goal">44dp</dimen>
-    <dimen name="general_health_goal_text_size">15sp</dimen>
-    <dimen name="errorcion_height">30dp</dimen>
-    <dimen name="errorcion_width">30dp</dimen>
-    <dimen name="general_header_text_size">14sp</dimen>
-    <dimen name="text_subscription_group_size">13sp</dimen>
-    <dimen name="text_bottom_bar_size">15sp</dimen>
-    
-    <dimen name="mood_bold_font_size">25sp</dimen>
-    <dimen name="manual_entry_bg_dimensions">250dp</dimen>
-    <dimen name="manual_entry_circle_radius">105dp</dimen>
-    <dimen name="manual_entry_stroke_width">28dp</dimen>
-   
+    <dimen name="edit_left_margin">70dp</dimen>
+    <dimen name="edit_right_margin">70dp</dimen>
+    <dimen name="edit_left_padding">40dp</dimen>
+    <dimen name="edit_right_padding">10dp</dimen>
+    <dimen name="edit_bottom_padding">5dp</dimen>
+    <dimen name="edit_top_padding">5dp</dimen>
+    <dimen name="edit_text_size">16sp</dimen>
+
 </resources>

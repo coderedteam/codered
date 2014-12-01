@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
 
-    <string name="app_name">Code Red</string>
+    <string name="app_name">CodeRed</string>
     <string name="lblWelcome">Welcome</string>
     <string name="lblEmail">Email</string>
-    <string name="txtDefaultEmail">Enter Email id</string>
+    <string name="txtDefaultEmail">Email id</string>
     <string name="lblPswd">Password</string>
     <string name="txtDefaultPswd">Password</string>
     <string name="txtBtnSignIn">Sign In</string>
@@ -24,5 +24,16 @@
     <string name="txtLoginSuccess">Login is successful.</string>
     <string name="txtRegisterMe">Tap to register.</string>
     <string name="txtRegisterationSuccess">Registeration is successful.</string>
-
+    <string name="txtDefaultName">Name</string>
+    <string name="txtPhoneNumber">Phone Number</string>
+    <string name="txtemergencycontact">Emergency Contact</string>
+    <string name="txtbloodgroup">Blood Group</string>
+    <string name="txtNavigateToSettingsScreen">Navigate to settings screen</string>
+     <string name="txtIgnoreMsg">Was this a false alert? Press "Dismiss" to prevent false Panic Broadcast before timeout.</string>
+      <string name="txtIgnoreMsg1">If you are not in Emergency condition, please tap Dismiss.</string>
+     
+     <string name="txtSMS_msg">URGENT!! NEED HELP! It\'s an Emerygency. My Location is: </string>
+    
+      <string name="txtSMS_no">+919535703593</string>
+     
 </resources>

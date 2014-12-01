@@ -5,9 +5,11 @@ import org.json.JSONException;
 import android.accounts.NetworkErrorException;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Message;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -25,16 +27,58 @@ OnNetworkUnavailableListener
 {
 	ImageButton loginButton;
 	LoginServerRequest loginrequest;
+	ImageButton registerButton;	
+	SharedPreferences settings;
+
 	
-	ImageButton registerButton;
+	boolean isAlreadyLoggedIn  = false;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
+		
+		Bundle bundle = getIntent().getExtras();
+		
+		//Get the preference manager
+				settings = PreferenceManager.getDefaultSharedPreferences(this);
+				
+				
+				//Check if the user is already logged in
+				isAlreadyLoggedIn = settings.getBoolean(Constants.SHARED_ISLOGGEDIN, false);
+				
+				if(true == isAlreadyLoggedIn)
+				{
+					try{
+					if (bundle != null
+							&& bundle.getString("keyShake").equals(ShakerService.SHAKE))
+					{
+						
+						
+						
+						navigatetosettingsscreen(true);
+						
+						
+					}
+					else{
+						
+						//Toast.makeText(LoginActivity.this, " alreadyloggin : "+isAlreadyLoggedIn, Toast.LENGTH_SHORT).show();
+						
+						navigatetosettingsscreen(false);
+					}
+					
+					}catch(Exception e){
+						navigatetosettingsscreen(false);
+					}
+					
+				}
 
 		//Load the login screen
 		setContentView(R.layout.login);
+		
+		
+		
 
 		//Associate the listeners
 		loginButton = (ImageButton) findViewById(R.id.loginBtn);
@@ -42,6 +86,21 @@ OnNetworkUnavailableListener
 		
 		registerButton = (ImageButton) findViewById(R.id.create_account);
 		registerButton.setOnClickListener(this);
+		
+		
+		
+	}
+	
+	
+	//navigate to settings screen
+	private void navigatetosettingsscreen(boolean isShaked)
+	{
+		
+		Intent i=new Intent(LoginActivity.this,HomeScreen.class);
+		i.putExtra("key", isShaked);
+		startActivity(i);
+		
+		finish();
 	}
 
 	@Override
@@ -100,16 +159,16 @@ OnNetworkUnavailableListener
 	public void onNetworkException(NetworkErrorException exception) 
 	{
 		int duration = Toast.LENGTH_SHORT;
-		Toast toast = Toast.makeText(getApplicationContext(), R.string.txtNetworkError, duration);
-		toast.show();
+		//Toast toast = Toast.makeText(getApplicationContext(), R.string.txtNetworkError, duration);
+		//toast.show();
 	}
 
 	@Override
 	public void onGeneralException(Exception exception) 
 	{
 		int duration = Toast.LENGTH_SHORT;
-		Toast toast = Toast.makeText(getApplicationContext(), R.string.txtUnknownError, duration);
-		toast.show();
+		//Toast toast = Toast.makeText(getApplicationContext(), R.string.txtUnknownError, duration);
+		//toast.show();
 
 	}
 
@@ -117,8 +176,8 @@ OnNetworkUnavailableListener
 	public void onJSONException(JSONException exception) 
 	{
 		int duration = Toast.LENGTH_SHORT;
-		Toast toast = Toast.makeText(getApplicationContext(), R.string.txtServerError, duration);
-		toast.show();
+		//Toast toast = Toast.makeText(getApplicationContext(), R.string.txtServerError, duration);
+		//toast.show();
 
 	}
 
@@ -133,11 +192,23 @@ OnNetworkUnavailableListener
 
 		if (Constants.JSONSUCCESS_RESPONSECODE == result)
 		{
-			int duration = Toast.LENGTH_SHORT;
+			/*int duration = Toast.LENGTH_SHORT;
 			Toast toast = Toast.makeText(getApplicationContext(), R.string.txtLoginSuccess, duration);
-			toast.show();
+			toast.show();*/
 		}
-
+		
+		//If the user is not logged in
+		if(false == isAlreadyLoggedIn)
+		{
+			//Store that user is now logged in
+			isAlreadyLoggedIn = true;
+			SharedPreferences.Editor editor = settings.edit();
+			editor.putBoolean(Constants.SHARED_ISLOGGEDIN, isAlreadyLoggedIn);
+			editor.commit();
+			
+			//Navigate to settings screen
+			navigatetosettingsscreen(false);
+		}
 	}
 
 	@Override

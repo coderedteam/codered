@@ -14,33 +14,39 @@
 
     <EditText
         android:id="@+id/username"
+        android:textSize="@dimen/edit_text_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
+        android:layout_marginLeft="@dimen/edit_left_margin"
+        android:layout_marginRight="@dimen/edit_right_margin"
         android:layout_marginTop="40dp"
         android:background="@drawable/username"
-        android:textColor="@android:color/white"
+        android:hint="@string/txtDefaultEmail"
         android:inputType="text"
-        android:paddingBottom="5dp"
-        android:paddingLeft="40dp"
-        android:paddingRight="10dp"
-        android:paddingTop="5dp" />
+        android:paddingBottom="@dimen/edit_bottom_padding"
+        android:paddingLeft="@dimen/edit_left_padding"
+        android:paddingRight="@dimen/edit_right_padding"
+        android:paddingTop="@dimen/edit_top_padding"
+        android:textColor="@android:color/white"
+        android:textColorHint="#99ffffff" />
 
     <EditText
         android:id="@+id/password"
+        android:textSize="@dimen/edit_text_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
+        android:layout_marginLeft="@dimen/edit_left_margin"
+        android:layout_marginRight="@dimen/edit_right_margin"
         android:layout_marginTop="20dp"
         android:background="@drawable/password"
+        android:hint="@string/txtDefaultPswd"
         android:inputType="textPassword"
+        android:paddingBottom="@dimen/edit_bottom_padding"
+        android:paddingLeft="@dimen/edit_left_padding"
+        android:paddingRight="@dimen/edit_right_padding"
+        android:paddingTop="@dimen/edit_top_padding"
         android:textColor="@android:color/white"
-        android:paddingBottom="5dp"
-        android:paddingLeft="40dp"
-        android:paddingRight="10dp"
-        android:paddingTop="5dp" />
+        android:textColorHint="#99ffffff" />
 
     <ImageButton
         android:id="@+id/loginBtn"
@@ -51,15 +57,6 @@
         android:background="@drawable/login_btn"
         android:contentDescription="@string/app_name" />
 
-   <!--  <ImageView
-        android:id="@+id/cannot_access"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="45dp"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/text_1" /> -->
-
     <ImageButton
         android:id="@+id/create_account"
         android:layout_width="wrap_content"
@@ -67,9 +64,9 @@
         android:layout_gravity="center_horizontal|bottom"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="100dp"
-        android:padding="30dp"
-        android:src="@drawable/text_2"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name" />
+        android:contentDescription="@string/app_name"
+        android:padding="30dp"
+        android:src="@drawable/text_2" />
 
 </LinearLayout>
